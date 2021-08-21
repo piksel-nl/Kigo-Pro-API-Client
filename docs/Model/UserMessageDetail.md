@@ -21,7 +21,7 @@ Name | Type | Description | Notes
 **sender_locale** | **string** |  | [optional]
 **sender_location** | **string** |  | [optional]
 **sender_user_id** | **int** |  | [optional]
-**attachments** | [**\Piksel\Kigo\ChannelsV2\Model\UserMessageAttachment[]**](UserMessageAttachment.md) |  | [optional]
+**attachments** | [**\Piksel\KigoPro\Model\UserMessageAttachment[]**](UserMessageAttachment.md) |  | [optional]
 **metadata** | **object** |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **num_adults** | **int** | Number of Adults |
 **num_children** | **int** | Number of Children | [optional]
 **compute_default_plan_only** | **bool** | Whether all plans or just the default one should be given (optional, defaults to false) | [optional]
-**requested_optional_fees** | [**\Piksel\Kigo\ChannelsV2\Model\OptionalFee[]**](OptionalFee.md) | The optional fee(s) that you want to consider in the quote | [optional]
+**requested_optional_fees** | [**\Piksel\KigoPro\Model\OptionalFee[]**](OptionalFee.md) | The optional fee(s) that you want to consider in the quote | [optional]
 **lead_guid** | **string** | Optional Lead (Guid) reference | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

@@ -5,8 +5,8 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  Piksel\Kigo
- * @author   Piksel
+ * @package  Piksel\KigoPro
+ * @author   Patrick Leijser
  * @link     https://piksel.nl
  */
 
@@ -26,7 +26,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace Piksel\Kigo\Test\Model;
+namespace Piksel\KigoPro\Test\Model;
 
 use PHPUnit\Framework\TestCase;
 
@@ -35,7 +35,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description AmenityListResourceList
- * @package     Piksel\Kigo
+ * @package     Piksel\KigoPro
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

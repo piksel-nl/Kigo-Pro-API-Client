@@ -1,4 +1,4 @@
-# Piksel\Kigo\MessagingApi
+# Piksel\KigoPro\MessagingApi
 
 All URIs are relative to https://www.kigoapis.com.
 
@@ -14,7 +14,7 @@ Method | HTTP request | Description
 ## `channelsV2MessagingMessagesGet()`
 
 ```php
-channelsV2MessagingMessagesGet(): \Piksel\Kigo\ChannelsV2\Model\GetUserMessageResponseResource
+channelsV2MessagingMessagesGet(): \Piksel\KigoPro\Model\GetUserMessageResponseResource
 ```
 
 Get Messages
@@ -27,10 +27,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Piksel\Kigo\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Piksel\KigoPro\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Piksel\Kigo\ChannelsV2\Api\MessagingApi(
+$apiInstance = new Piksel\KigoPro\Api\MessagingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -51,7 +51,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Piksel\Kigo\ChannelsV2\Model\GetUserMessageResponseResource**](../Model/GetUserMessageResponseResource.md)
+[**\Piksel\KigoPro\Model\GetUserMessageResponseResource**](../Model/GetUserMessageResponseResource.md)
 
 ### Authorization
 
@@ -69,7 +69,7 @@ This endpoint does not need any parameter.
 ## `channelsV2MessagingThreadsPost()`
 
 ```php
-channelsV2MessagingThreadsPost($post_thread_request): \Piksel\Kigo\ChannelsV2\Model\PostThreadResponseResource
+channelsV2MessagingThreadsPost($post_thread_request): \Piksel\KigoPro\Model\PostThreadResponseResource
 ```
 
 Create a new Thread
@@ -82,16 +82,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Piksel\Kigo\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Piksel\KigoPro\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Piksel\Kigo\ChannelsV2\Api\MessagingApi(
+$apiInstance = new Piksel\KigoPro\Api\MessagingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$post_thread_request = new \Piksel\Kigo\ChannelsV2\Model\PostThreadRequest(); // \Piksel\Kigo\ChannelsV2\Model\PostThreadRequest | Thread object
+$post_thread_request = new \Piksel\KigoPro\Model\PostThreadRequest(); // \Piksel\KigoPro\Model\PostThreadRequest | Thread object
 
 try {
     $result = $apiInstance->channelsV2MessagingThreadsPost($post_thread_request);
@@ -105,11 +105,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **post_thread_request** | [**\Piksel\Kigo\ChannelsV2\Model\PostThreadRequest**](../Model/PostThreadRequest.md)| Thread object | [optional]
+ **post_thread_request** | [**\Piksel\KigoPro\Model\PostThreadRequest**](../Model/PostThreadRequest.md)| Thread object | [optional]
 
 ### Return type
 
-[**\Piksel\Kigo\ChannelsV2\Model\PostThreadResponseResource**](../Model/PostThreadResponseResource.md)
+[**\Piksel\KigoPro\Model\PostThreadResponseResource**](../Model/PostThreadResponseResource.md)
 
 ### Authorization
 
@@ -127,7 +127,7 @@ Name | Type | Description  | Notes
 ## `channelsV2MessagingThreadsTidMessagesIdPut()`
 
 ```php
-channelsV2MessagingThreadsTidMessagesIdPut($tid, $id, $put_user_message_request): \Piksel\Kigo\ChannelsV2\Model\PutUserMessageResponseResource
+channelsV2MessagingThreadsTidMessagesIdPut($tid, $id, $put_user_message_request): \Piksel\KigoPro\Model\PutUserMessageResponseResource
 ```
 
 Update a Message
@@ -140,10 +140,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Piksel\Kigo\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Piksel\KigoPro\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Piksel\Kigo\ChannelsV2\Api\MessagingApi(
+$apiInstance = new Piksel\KigoPro\Api\MessagingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -151,7 +151,7 @@ $apiInstance = new Piksel\Kigo\ChannelsV2\Api\MessagingApi(
 );
 $tid = 56; // int | Thread ID
 $id = 56; // int | Message ID
-$put_user_message_request = new \Piksel\Kigo\ChannelsV2\Model\PutUserMessageRequest(); // \Piksel\Kigo\ChannelsV2\Model\PutUserMessageRequest | Message object
+$put_user_message_request = new \Piksel\KigoPro\Model\PutUserMessageRequest(); // \Piksel\KigoPro\Model\PutUserMessageRequest | Message object
 
 try {
     $result = $apiInstance->channelsV2MessagingThreadsTidMessagesIdPut($tid, $id, $put_user_message_request);
@@ -167,11 +167,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tid** | **int**| Thread ID |
  **id** | **int**| Message ID |
- **put_user_message_request** | [**\Piksel\Kigo\ChannelsV2\Model\PutUserMessageRequest**](../Model/PutUserMessageRequest.md)| Message object | [optional]
+ **put_user_message_request** | [**\Piksel\KigoPro\Model\PutUserMessageRequest**](../Model/PutUserMessageRequest.md)| Message object | [optional]
 
 ### Return type
 
-[**\Piksel\Kigo\ChannelsV2\Model\PutUserMessageResponseResource**](../Model/PutUserMessageResponseResource.md)
+[**\Piksel\KigoPro\Model\PutUserMessageResponseResource**](../Model/PutUserMessageResponseResource.md)
 
 ### Authorization
 
@@ -189,7 +189,7 @@ Name | Type | Description  | Notes
 ## `channelsV2MessagingThreadsTidMessagesPost()`
 
 ```php
-channelsV2MessagingThreadsTidMessagesPost($tid, $post_user_message_request): \Piksel\Kigo\ChannelsV2\Model\PostUserMessageResponseResource
+channelsV2MessagingThreadsTidMessagesPost($tid, $post_user_message_request): \Piksel\KigoPro\Model\PostUserMessageResponseResource
 ```
 
 Create a new Message
@@ -202,17 +202,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Piksel\Kigo\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Piksel\KigoPro\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Piksel\Kigo\ChannelsV2\Api\MessagingApi(
+$apiInstance = new Piksel\KigoPro\Api\MessagingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $tid = 56; // int | Thread ID
-$post_user_message_request = new \Piksel\Kigo\ChannelsV2\Model\PostUserMessageRequest(); // \Piksel\Kigo\ChannelsV2\Model\PostUserMessageRequest | Message object
+$post_user_message_request = new \Piksel\KigoPro\Model\PostUserMessageRequest(); // \Piksel\KigoPro\Model\PostUserMessageRequest | Message object
 
 try {
     $result = $apiInstance->channelsV2MessagingThreadsTidMessagesPost($tid, $post_user_message_request);
@@ -227,11 +227,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tid** | **int**| Thread ID |
- **post_user_message_request** | [**\Piksel\Kigo\ChannelsV2\Model\PostUserMessageRequest**](../Model/PostUserMessageRequest.md)| Message object | [optional]
+ **post_user_message_request** | [**\Piksel\KigoPro\Model\PostUserMessageRequest**](../Model/PostUserMessageRequest.md)| Message object | [optional]
 
 ### Return type
 
-[**\Piksel\Kigo\ChannelsV2\Model\PostUserMessageResponseResource**](../Model/PostUserMessageResponseResource.md)
+[**\Piksel\KigoPro\Model\PostUserMessageResponseResource**](../Model/PostUserMessageResponseResource.md)
 
 ### Authorization
 
@@ -249,7 +249,7 @@ Name | Type | Description  | Notes
 ## `channelsV2MessagingThreadsTidPut()`
 
 ```php
-channelsV2MessagingThreadsTidPut($tid, $post_thread_request): \Piksel\Kigo\ChannelsV2\Model\PostThreadResponseResource
+channelsV2MessagingThreadsTidPut($tid, $post_thread_request): \Piksel\KigoPro\Model\PostThreadResponseResource
 ```
 
 Update a Thread
@@ -262,17 +262,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Piksel\Kigo\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Piksel\KigoPro\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Piksel\Kigo\ChannelsV2\Api\MessagingApi(
+$apiInstance = new Piksel\KigoPro\Api\MessagingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $tid = 56; // int | Thread object
-$post_thread_request = new \Piksel\Kigo\ChannelsV2\Model\PostThreadRequest(); // \Piksel\Kigo\ChannelsV2\Model\PostThreadRequest | Thread object
+$post_thread_request = new \Piksel\KigoPro\Model\PostThreadRequest(); // \Piksel\KigoPro\Model\PostThreadRequest | Thread object
 
 try {
     $result = $apiInstance->channelsV2MessagingThreadsTidPut($tid, $post_thread_request);
@@ -287,11 +287,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tid** | **int**| Thread object |
- **post_thread_request** | [**\Piksel\Kigo\ChannelsV2\Model\PostThreadRequest**](../Model/PostThreadRequest.md)| Thread object | [optional]
+ **post_thread_request** | [**\Piksel\KigoPro\Model\PostThreadRequest**](../Model/PostThreadRequest.md)| Thread object | [optional]
 
 ### Return type
 
-[**\Piksel\Kigo\ChannelsV2\Model\PostThreadResponseResource**](../Model/PostThreadResponseResource.md)
+[**\Piksel\KigoPro\Model\PostThreadResponseResource**](../Model/PostThreadResponseResource.md)
 
 ### Authorization
 

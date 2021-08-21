@@ -1,4 +1,4 @@
-# Piksel\Kigo\BookingApi
+# Piksel\KigoPro\BookingApi
 
 All URIs are relative to https://www.kigoapis.com.
 
@@ -18,7 +18,7 @@ Method | HTTP request | Description
 ## `channelsV2BookingsDiffGet()`
 
 ```php
-channelsV2BookingsDiffGet($start_date, $channel_connection_id, $end_date): \Piksel\Kigo\ChannelsV2\Model\BookingDiffOutputListResourceList
+channelsV2BookingsDiffGet($start_date, $channel_connection_id, $end_date): \Piksel\KigoPro\Model\BookingDiffOutputListResourceList
 ```
 
 Get ID and Date Last Updated of all Bookings that were created/modified within the specified date range
@@ -31,10 +31,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Piksel\Kigo\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Piksel\KigoPro\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Piksel\Kigo\ChannelsV2\Api\BookingApi(
+$apiInstance = new Piksel\KigoPro\Api\BookingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Piksel\Kigo\ChannelsV2\Model\BookingDiffOutputListResourceList**](../Model/BookingDiffOutputListResourceList.md)
+[**\Piksel\KigoPro\Model\BookingDiffOutputListResourceList**](../Model/BookingDiffOutputListResourceList.md)
 
 ### Authorization
 
@@ -93,10 +93,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Piksel\Kigo\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Piksel\KigoPro\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Piksel\Kigo\ChannelsV2\Api\BookingApi(
+$apiInstance = new Piksel\KigoPro\Api\BookingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -141,7 +141,7 @@ void (empty response body)
 ## `channelsV2BookingsIdCreditcardsPost()`
 
 ```php
-channelsV2BookingsIdCreditcardsPost($id, $credit_card): \Piksel\Kigo\ChannelsV2\Model\PostBookingCreditCardResponse
+channelsV2BookingsIdCreditcardsPost($id, $credit_card): \Piksel\KigoPro\Model\PostBookingCreditCardResponse
 ```
 
 Save and try to authorize/charge a Credit Card for a Booking
@@ -154,17 +154,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Piksel\Kigo\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Piksel\KigoPro\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Piksel\Kigo\ChannelsV2\Api\BookingApi(
+$apiInstance = new Piksel\KigoPro\Api\BookingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = 56; // int | ID of the Booking
-$credit_card = new \Piksel\Kigo\ChannelsV2\Model\CreditCard(); // \Piksel\Kigo\ChannelsV2\Model\CreditCard | Credit Card object
+$credit_card = new \Piksel\KigoPro\Model\CreditCard(); // \Piksel\KigoPro\Model\CreditCard | Credit Card object
 
 try {
     $result = $apiInstance->channelsV2BookingsIdCreditcardsPost($id, $credit_card);
@@ -179,11 +179,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**| ID of the Booking |
- **credit_card** | [**\Piksel\Kigo\ChannelsV2\Model\CreditCard**](../Model/CreditCard.md)| Credit Card object | [optional]
+ **credit_card** | [**\Piksel\KigoPro\Model\CreditCard**](../Model/CreditCard.md)| Credit Card object | [optional]
 
 ### Return type
 
-[**\Piksel\Kigo\ChannelsV2\Model\PostBookingCreditCardResponse**](../Model/PostBookingCreditCardResponse.md)
+[**\Piksel\KigoPro\Model\PostBookingCreditCardResponse**](../Model/PostBookingCreditCardResponse.md)
 
 ### Authorization
 
@@ -214,17 +214,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Piksel\Kigo\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Piksel\KigoPro\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Piksel\Kigo\ChannelsV2\Api\BookingApi(
+$apiInstance = new Piksel\KigoPro\Api\BookingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = 56; // int | Booking ID
-$booking_event = new \Piksel\Kigo\ChannelsV2\Model\BookingEvent(); // \Piksel\Kigo\ChannelsV2\Model\BookingEvent | Booking Event
+$booking_event = new \Piksel\KigoPro\Model\BookingEvent(); // \Piksel\KigoPro\Model\BookingEvent | Booking Event
 
 try {
     $apiInstance->channelsV2BookingsIdEventsPost($id, $booking_event);
@@ -238,7 +238,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**| Booking ID |
- **booking_event** | [**\Piksel\Kigo\ChannelsV2\Model\BookingEvent**](../Model/BookingEvent.md)| Booking Event | [optional]
+ **booking_event** | [**\Piksel\KigoPro\Model\BookingEvent**](../Model/BookingEvent.md)| Booking Event | [optional]
 
 ### Return type
 
@@ -260,7 +260,7 @@ void (empty response body)
 ## `channelsV2BookingsIdGet()`
 
 ```php
-channelsV2BookingsIdGet($id, $options): \Piksel\Kigo\ChannelsV2\Model\BookingResource
+channelsV2BookingsIdGet($id, $options): \Piksel\KigoPro\Model\BookingResource
 ```
 
 Get a Booking
@@ -273,10 +273,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Piksel\Kigo\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Piksel\KigoPro\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Piksel\Kigo\ChannelsV2\Api\BookingApi(
+$apiInstance = new Piksel\KigoPro\Api\BookingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -302,7 +302,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Piksel\Kigo\ChannelsV2\Model\BookingResource**](../Model/BookingResource.md)
+[**\Piksel\KigoPro\Model\BookingResource**](../Model/BookingResource.md)
 
 ### Authorization
 
@@ -320,7 +320,7 @@ Name | Type | Description  | Notes
 ## `channelsV2BookingsIdPut()`
 
 ```php
-channelsV2BookingsIdPut($id, $put_booking_request): \Piksel\Kigo\ChannelsV2\Model\PutBookingResponse
+channelsV2BookingsIdPut($id, $put_booking_request): \Piksel\KigoPro\Model\PutBookingResponse
 ```
 
 Update a Booking
@@ -333,17 +333,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Piksel\Kigo\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Piksel\KigoPro\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Piksel\Kigo\ChannelsV2\Api\BookingApi(
+$apiInstance = new Piksel\KigoPro\Api\BookingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = 56; // int | Booking ID
-$put_booking_request = new \Piksel\Kigo\ChannelsV2\Model\PutBookingRequest(); // \Piksel\Kigo\ChannelsV2\Model\PutBookingRequest | Booking object to be updated
+$put_booking_request = new \Piksel\KigoPro\Model\PutBookingRequest(); // \Piksel\KigoPro\Model\PutBookingRequest | Booking object to be updated
 
 try {
     $result = $apiInstance->channelsV2BookingsIdPut($id, $put_booking_request);
@@ -358,11 +358,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**| Booking ID |
- **put_booking_request** | [**\Piksel\Kigo\ChannelsV2\Model\PutBookingRequest**](../Model/PutBookingRequest.md)| Booking object to be updated | [optional]
+ **put_booking_request** | [**\Piksel\KigoPro\Model\PutBookingRequest**](../Model/PutBookingRequest.md)| Booking object to be updated | [optional]
 
 ### Return type
 
-[**\Piksel\Kigo\ChannelsV2\Model\PutBookingResponse**](../Model/PutBookingResponse.md)
+[**\Piksel\KigoPro\Model\PutBookingResponse**](../Model/PutBookingResponse.md)
 
 ### Authorization
 
@@ -380,7 +380,7 @@ Name | Type | Description  | Notes
 ## `channelsV2BookingsPost()`
 
 ```php
-channelsV2BookingsPost($post_booking_request): \Piksel\Kigo\ChannelsV2\Model\PostBookingResponse
+channelsV2BookingsPost($post_booking_request): \Piksel\KigoPro\Model\PostBookingResponse
 ```
 
 Create a new Booking
@@ -393,16 +393,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Piksel\Kigo\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Piksel\KigoPro\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Piksel\Kigo\ChannelsV2\Api\BookingApi(
+$apiInstance = new Piksel\KigoPro\Api\BookingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$post_booking_request = new \Piksel\Kigo\ChannelsV2\Model\PostBookingRequest(); // \Piksel\Kigo\ChannelsV2\Model\PostBookingRequest | Booking object
+$post_booking_request = new \Piksel\KigoPro\Model\PostBookingRequest(); // \Piksel\KigoPro\Model\PostBookingRequest | Booking object
 
 try {
     $result = $apiInstance->channelsV2BookingsPost($post_booking_request);
@@ -416,11 +416,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **post_booking_request** | [**\Piksel\Kigo\ChannelsV2\Model\PostBookingRequest**](../Model/PostBookingRequest.md)| Booking object | [optional]
+ **post_booking_request** | [**\Piksel\KigoPro\Model\PostBookingRequest**](../Model/PostBookingRequest.md)| Booking object | [optional]
 
 ### Return type
 
-[**\Piksel\Kigo\ChannelsV2\Model\PostBookingResponse**](../Model/PostBookingResponse.md)
+[**\Piksel\KigoPro\Model\PostBookingResponse**](../Model/PostBookingResponse.md)
 
 ### Authorization
 
@@ -438,7 +438,7 @@ Name | Type | Description  | Notes
 ## `proV1BookingsGet()`
 
 ```php
-proV1BookingsGet($start_date, $account_id, $end_date, $property_id, $channel): \Piksel\Kigo\ChannelsV2\Model\GetBookingVm
+proV1BookingsGet($start_date, $account_id, $end_date, $property_id, $channel): \Piksel\KigoPro\Model\GetBookingVm
 ```
 
 
@@ -451,10 +451,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Piksel\Kigo\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Piksel\KigoPro\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Piksel\Kigo\ChannelsV2\Api\BookingApi(
+$apiInstance = new Piksel\KigoPro\Api\BookingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -486,7 +486,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Piksel\Kigo\ChannelsV2\Model\GetBookingVm**](../Model/GetBookingVm.md)
+[**\Piksel\KigoPro\Model\GetBookingVm**](../Model/GetBookingVm.md)
 
 ### Authorization
 
@@ -504,7 +504,7 @@ Name | Type | Description  | Notes
 ## `proV1BookingsIdGet()`
 
 ```php
-proV1BookingsIdGet($id): \Piksel\Kigo\ChannelsV2\Model\GetBookingVm
+proV1BookingsIdGet($id): \Piksel\KigoPro\Model\GetBookingVm
 ```
 
 
@@ -517,10 +517,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Piksel\Kigo\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Piksel\KigoPro\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Piksel\Kigo\ChannelsV2\Api\BookingApi(
+$apiInstance = new Piksel\KigoPro\Api\BookingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -544,7 +544,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Piksel\Kigo\ChannelsV2\Model\GetBookingVm**](../Model/GetBookingVm.md)
+[**\Piksel\KigoPro\Model\GetBookingVm**](../Model/GetBookingVm.md)
 
 ### Authorization
 

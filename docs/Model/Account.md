@@ -18,6 +18,6 @@ Name | Type | Description | Notes
 **supported_locales** | **string[]** | en-US, it-IT, ... | [optional]
 **accepted_payment_methods** | **string[]** | Credit card brands which the PMC accepts for booking payment | [optional]
 **legal_business_name** | **string** |  | [optional]
-**legal_address** | [**\Piksel\Kigo\ChannelsV2\Model\Address**](Address.md) |  | [optional]
+**legal_address** | [**\Piksel\KigoPro\Model\Address**](Address.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

@@ -1,4 +1,4 @@
-# Piksel\Kigo\PromotionApi
+# Piksel\KigoPro\PromotionApi
 
 All URIs are relative to https://www.kigoapis.com.
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 ## `channelsV2PromotionsAssignmentGet()`
 
 ```php
-channelsV2PromotionsAssignmentGet($cc_id): \Piksel\Kigo\ChannelsV2\Model\PromotionSettingWithAssociatedListingsListResourceList
+channelsV2PromotionsAssignmentGet($cc_id): \Piksel\KigoPro\Model\PromotionSettingWithAssociatedListingsListResourceList
 ```
 
 Get Promotions with assigned listing ids for active and shared listings on a given channel.
@@ -23,10 +23,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Piksel\Kigo\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Piksel\KigoPro\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Piksel\Kigo\ChannelsV2\Api\PromotionApi(
+$apiInstance = new Piksel\KigoPro\Api\PromotionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -50,7 +50,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Piksel\Kigo\ChannelsV2\Model\PromotionSettingWithAssociatedListingsListResourceList**](../Model/PromotionSettingWithAssociatedListingsListResourceList.md)
+[**\Piksel\KigoPro\Model\PromotionSettingWithAssociatedListingsListResourceList**](../Model/PromotionSettingWithAssociatedListingsListResourceList.md)
 
 ### Authorization
 

@@ -1,4 +1,4 @@
-# Piksel\Kigo\PropertyHouseRulesApi
+# Piksel\KigoPro\PropertyHouseRulesApi
 
 All URIs are relative to https://www.kigoapis.com.
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 ## `proV1ContentPropertiesIdHouserulesGet()`
 
 ```php
-proV1ContentPropertiesIdHouserulesGet($id): \Piksel\Kigo\ChannelsV2\Model\GetHouseRulesVm
+proV1ContentPropertiesIdHouserulesGet($id): \Piksel\KigoPro\Model\GetHouseRulesVm
 ```
 
 
@@ -24,10 +24,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Piksel\Kigo\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Piksel\KigoPro\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Piksel\Kigo\ChannelsV2\Api\PropertyHouseRulesApi(
+$apiInstance = new Piksel\KigoPro\Api\PropertyHouseRulesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -51,7 +51,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Piksel\Kigo\ChannelsV2\Model\GetHouseRulesVm**](../Model/GetHouseRulesVm.md)
+[**\Piksel\KigoPro\Model\GetHouseRulesVm**](../Model/GetHouseRulesVm.md)
 
 ### Authorization
 
@@ -69,7 +69,7 @@ Name | Type | Description  | Notes
 ## `proV1ContentPropertiesIdHouserulesPut()`
 
 ```php
-proV1ContentPropertiesIdHouserulesPut($id, $put_house_rules_command): \Piksel\Kigo\ChannelsV2\Model\BooleanCommandOkEnvelope
+proV1ContentPropertiesIdHouserulesPut($id, $put_house_rules_command): \Piksel\KigoPro\Model\BooleanCommandOkEnvelope
 ```
 
 
@@ -82,17 +82,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Piksel\Kigo\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Piksel\KigoPro\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Piksel\Kigo\ChannelsV2\Api\PropertyHouseRulesApi(
+$apiInstance = new Piksel\KigoPro\Api\PropertyHouseRulesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = 56; // int
-$put_house_rules_command = new \Piksel\Kigo\ChannelsV2\Model\PutHouseRulesCommand(); // \Piksel\Kigo\ChannelsV2\Model\PutHouseRulesCommand
+$put_house_rules_command = new \Piksel\KigoPro\Model\PutHouseRulesCommand(); // \Piksel\KigoPro\Model\PutHouseRulesCommand
 
 try {
     $result = $apiInstance->proV1ContentPropertiesIdHouserulesPut($id, $put_house_rules_command);
@@ -107,11 +107,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**|  |
- **put_house_rules_command** | [**\Piksel\Kigo\ChannelsV2\Model\PutHouseRulesCommand**](../Model/PutHouseRulesCommand.md)|  | [optional]
+ **put_house_rules_command** | [**\Piksel\KigoPro\Model\PutHouseRulesCommand**](../Model/PutHouseRulesCommand.md)|  | [optional]
 
 ### Return type
 
-[**\Piksel\Kigo\ChannelsV2\Model\BooleanCommandOkEnvelope**](../Model/BooleanCommandOkEnvelope.md)
+[**\Piksel\KigoPro\Model\BooleanCommandOkEnvelope**](../Model/BooleanCommandOkEnvelope.md)
 
 ### Authorization
 

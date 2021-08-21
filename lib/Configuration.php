@@ -4,8 +4,8 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  Piksel\Kigo
- * @author   Piksel
+ * @package  Piksel\KigoPro
+ * @author   Patrick Leijser
  * @link     https://piksel.nl
  */
 
@@ -25,15 +25,15 @@
  * Do not edit the class manually.
  */
 
-namespace Piksel\Kigo;
+namespace Piksel\KigoPro;
 
 /**
  * Configuration Class Doc Comment
  * PHP version 7.2
  *
  * @category Class
- * @package  Piksel\Kigo
- * @author   Piksel
+ * @package  Piksel\KigoPro
+ * @author   Patrick Leijser
  * @link     https://piksel.nl
  */
 class Configuration
@@ -395,7 +395,7 @@ class Configuration
      */
     public static function toDebugReport()
     {
-        $report  = 'PHP SDK (Piksel\Kigo) Debug Report:' . PHP_EOL;
+        $report  = 'PHP SDK (Piksel\KigoPro) Debug Report:' . PHP_EOL;
         $report .= '    OS: ' . php_uname() . PHP_EOL;
         $report .= '    PHP Version: ' . PHP_VERSION . PHP_EOL;
         $report .= '    The version of the OpenAPI document: channels-v2' . PHP_EOL;

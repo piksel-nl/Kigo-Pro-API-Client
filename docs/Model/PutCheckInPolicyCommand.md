@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **check_out_end_time_minutes_from_midnight** | **int** |  | [optional]
 **check_in_method** | **string** |  | [optional]
 **check_in_off_site** | **bool** |  | [optional]
-**check_in_location** | [**\Piksel\Kigo\ChannelsV2\Model\PutCheckInPolicyLocationDto**](PutCheckInPolicyLocationDto.md) |  | [optional]
-**check_in_instructions** | [**\Piksel\Kigo\ChannelsV2\Model\PutCheckInPolicyCheckInInstructionsDto[]**](PutCheckInPolicyCheckInInstructionsDto.md) |  | [optional]
+**check_in_location** | [**\Piksel\KigoPro\Model\PutCheckInPolicyLocationDto**](PutCheckInPolicyLocationDto.md) |  | [optional]
+**check_in_instructions** | [**\Piksel\KigoPro\Model\PutCheckInPolicyCheckInInstructionsDto[]**](PutCheckInPolicyCheckInInstructionsDto.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

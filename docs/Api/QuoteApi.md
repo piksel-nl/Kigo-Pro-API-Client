@@ -1,4 +1,4 @@
-# Piksel\Kigo\QuoteApi
+# Piksel\KigoPro\QuoteApi
 
 All URIs are relative to https://www.kigoapis.com.
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 ## `channelsV2QuotesPost()`
 
 ```php
-channelsV2QuotesPost($quote_request): \Piksel\Kigo\ChannelsV2\Model\QuoteResource
+channelsV2QuotesPost($quote_request): \Piksel\KigoPro\Model\QuoteResource
 ```
 
 Generate a quote given a desired QuoteContext
@@ -24,16 +24,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Piksel\Kigo\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Piksel\KigoPro\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Piksel\Kigo\ChannelsV2\Api\QuoteApi(
+$apiInstance = new Piksel\KigoPro\Api\QuoteApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$quote_request = new \Piksel\Kigo\ChannelsV2\Model\QuoteRequest(); // \Piksel\Kigo\ChannelsV2\Model\QuoteRequest | Quote Request
+$quote_request = new \Piksel\KigoPro\Model\QuoteRequest(); // \Piksel\KigoPro\Model\QuoteRequest | Quote Request
 
 try {
     $result = $apiInstance->channelsV2QuotesPost($quote_request);
@@ -47,11 +47,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **quote_request** | [**\Piksel\Kigo\ChannelsV2\Model\QuoteRequest**](../Model/QuoteRequest.md)| Quote Request | [optional]
+ **quote_request** | [**\Piksel\KigoPro\Model\QuoteRequest**](../Model/QuoteRequest.md)| Quote Request | [optional]
 
 ### Return type
 
-[**\Piksel\Kigo\ChannelsV2\Model\QuoteResource**](../Model/QuoteResource.md)
+[**\Piksel\KigoPro\Model\QuoteResource**](../Model/QuoteResource.md)
 
 ### Authorization
 
@@ -69,7 +69,7 @@ Name | Type | Description  | Notes
 ## `channelsV2QuotesQuoteGuidBookPost()`
 
 ```php
-channelsV2QuotesQuoteGuidBookPost($quote_guid, $post_booking_from_quote_request): \Piksel\Kigo\ChannelsV2\Model\PostBookingResponse
+channelsV2QuotesQuoteGuidBookPost($quote_guid, $post_booking_from_quote_request): \Piksel\KigoPro\Model\PostBookingResponse
 ```
 
 Convert a Quote into a Booking
@@ -82,17 +82,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Piksel\Kigo\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Piksel\KigoPro\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Piksel\Kigo\ChannelsV2\Api\QuoteApi(
+$apiInstance = new Piksel\KigoPro\Api\QuoteApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $quote_guid = 'quote_guid_example'; // string | Quote Guid to
-$post_booking_from_quote_request = new \Piksel\Kigo\ChannelsV2\Model\PostBookingFromQuoteRequest(); // \Piksel\Kigo\ChannelsV2\Model\PostBookingFromQuoteRequest | Booking Request (from a pre-existing Quote)
+$post_booking_from_quote_request = new \Piksel\KigoPro\Model\PostBookingFromQuoteRequest(); // \Piksel\KigoPro\Model\PostBookingFromQuoteRequest | Booking Request (from a pre-existing Quote)
 
 try {
     $result = $apiInstance->channelsV2QuotesQuoteGuidBookPost($quote_guid, $post_booking_from_quote_request);
@@ -107,11 +107,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **quote_guid** | [**string**](../Model/.md)| Quote Guid to |
- **post_booking_from_quote_request** | [**\Piksel\Kigo\ChannelsV2\Model\PostBookingFromQuoteRequest**](../Model/PostBookingFromQuoteRequest.md)| Booking Request (from a pre-existing Quote) | [optional]
+ **post_booking_from_quote_request** | [**\Piksel\KigoPro\Model\PostBookingFromQuoteRequest**](../Model/PostBookingFromQuoteRequest.md)| Booking Request (from a pre-existing Quote) | [optional]
 
 ### Return type
 
-[**\Piksel\Kigo\ChannelsV2\Model\PostBookingResponse**](../Model/PostBookingResponse.md)
+[**\Piksel\KigoPro\Model\PostBookingResponse**](../Model/PostBookingResponse.md)
 
 ### Authorization
 

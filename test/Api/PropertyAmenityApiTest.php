@@ -4,8 +4,8 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  Piksel\Kigo
- * @author   Piksel
+ * @package  Piksel\KigoPro
+ * @author   Patrick Leijser
  * @link     https://piksel.nl
  */
 
@@ -25,19 +25,19 @@
  * Please update the test case below to test the endpoint.
  */
 
-namespace Piksel\Kigo\Test\Api;
+namespace Piksel\KigoPro\Test\Api;
 
-use \Piksel\Kigo\Configuration;
-use \Piksel\Kigo\ChannelsV2\ApiException;
-use \Piksel\Kigo\ObjectSerializer;
+use \Piksel\KigoPro\Configuration;
+use \Piksel\KigoPro\ApiException;
+use \Piksel\KigoPro\ObjectSerializer;
 use PHPUnit\Framework\TestCase;
 
 /**
  * PropertyAmenityApiTest Class Doc Comment
  *
  * @category Class
- * @package  Piksel\Kigo
- * @author   Piksel
+ * @package  Piksel\KigoPro
+ * @author   Patrick Leijser
  * @link     https://piksel.nl
  */
 class PropertyAmenityApiTest extends TestCase

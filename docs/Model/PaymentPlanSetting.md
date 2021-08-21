@@ -10,6 +10,6 @@ Name | Type | Description | Notes
 **is_refundable** | **bool** | True if refundable, false otherwise | [optional]
 **percent_price_multiplier** | **double** | Price multiplier in percentage | [optional]
 **is_default** | **bool** | True if it is the default plan setting, false otherwise | [optional]
-**rate_collected_at_time_of_booking** | [**\Piksel\Kigo\ChannelsV2\Model\Rate**](Rate.md) |  | [optional]
+**rate_collected_at_time_of_booking** | [**\Piksel\KigoPro\Model\Rate**](Rate.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

@@ -1,4 +1,4 @@
-# Piksel\Kigo\ReferenceDataApi
+# Piksel\KigoPro\ReferenceDataApi
 
 All URIs are relative to https://www.kigoapis.com.
 
@@ -12,7 +12,7 @@ Method | HTTP request | Description
 ## `channelsV2AmenitiesGet()`
 
 ```php
-channelsV2AmenitiesGet($options): \Piksel\Kigo\ChannelsV2\Model\AmenityListResourceList
+channelsV2AmenitiesGet($options): \Piksel\KigoPro\Model\AmenityListResourceList
 ```
 
 Get supported amenities
@@ -25,10 +25,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Piksel\Kigo\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Piksel\KigoPro\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Piksel\Kigo\ChannelsV2\Api\ReferenceDataApi(
+$apiInstance = new Piksel\KigoPro\Api\ReferenceDataApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -52,7 +52,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Piksel\Kigo\ChannelsV2\Model\AmenityListResourceList**](../Model/AmenityListResourceList.md)
+[**\Piksel\KigoPro\Model\AmenityListResourceList**](../Model/AmenityListResourceList.md)
 
 ### Authorization
 
@@ -70,7 +70,7 @@ Name | Type | Description  | Notes
 ## `channelsV2CountriesGet()`
 
 ```php
-channelsV2CountriesGet(): \Piksel\Kigo\ChannelsV2\Model\CountryListResourceList
+channelsV2CountriesGet(): \Piksel\KigoPro\Model\CountryListResourceList
 ```
 
 Get supported countries
@@ -83,10 +83,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Piksel\Kigo\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Piksel\KigoPro\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Piksel\Kigo\ChannelsV2\Api\ReferenceDataApi(
+$apiInstance = new Piksel\KigoPro\Api\ReferenceDataApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -107,7 +107,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Piksel\Kigo\ChannelsV2\Model\CountryListResourceList**](../Model/CountryListResourceList.md)
+[**\Piksel\KigoPro\Model\CountryListResourceList**](../Model/CountryListResourceList.md)
 
 ### Authorization
 
@@ -125,7 +125,7 @@ This endpoint does not need any parameter.
 ## `channelsV2MediatagsGet()`
 
 ```php
-channelsV2MediatagsGet(): \Piksel\Kigo\ChannelsV2\Model\TagListResourceList
+channelsV2MediatagsGet(): \Piksel\KigoPro\Model\TagListResourceList
 ```
 
 Get supported tags
@@ -138,10 +138,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Piksel\Kigo\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Piksel\KigoPro\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Piksel\Kigo\ChannelsV2\Api\ReferenceDataApi(
+$apiInstance = new Piksel\KigoPro\Api\ReferenceDataApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -162,7 +162,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Piksel\Kigo\ChannelsV2\Model\TagListResourceList**](../Model/TagListResourceList.md)
+[**\Piksel\KigoPro\Model\TagListResourceList**](../Model/TagListResourceList.md)
 
 ### Authorization
 

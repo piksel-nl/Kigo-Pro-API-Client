@@ -1,6 +1,6 @@
 {
-    "name": "piksel-nl/Kigo-Pro-API-Client",
-    "description": "This PHP Client has support for Kigo Pro API's",
+    "name": "piksel-nl/kigo-pro-api-client",
+    "description": "https://www.kigoapis.com/pro/v1/swagger/?urls.primaryName=Channel%20Manager%20API%20v2",
     "keywords": [
         "php",
         "sdk",
@@ -10,7 +10,7 @@
         "pro",
         "channels-v2"
     ],
-    "homepage": "https://piksel.nl",
+    "homepage": "https://openapi-generator.tech",
     "license": "unlicense",
     "authors": [
         {
@@ -34,9 +34,9 @@
         "friendsofphp/php-cs-fixer": "^2.12"
     },
     "autoload": {
-        "psr-4": { "Piksel\\Kigo\\" : "lib/" }
+        "psr-4": { "Piksel\\KigoPro\\" : "lib/" }
     },
     "autoload-dev": {
-        "psr-4": { "Piksel\\Kigo\\Test\\" : "test/" }
+        "psr-4": { "Piksel\\KigoPro\\Test\\" : "test/" }
     }
 }

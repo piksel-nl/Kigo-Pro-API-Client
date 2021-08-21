@@ -12,9 +12,9 @@ Name | Type | Description | Notes
 **error_message** | **string** | Error Message | [optional]
 **payment_plan_guid** | **string** | Payment Plan Guid | [optional]
 **zero_dollar_authorization_status** | **string** | Card Authorization Status | [optional]
-**zero_dollar_authorization_response** | [**\Piksel\Kigo\ChannelsV2\Model\CreditCardAuthorizationResponse**](CreditCardAuthorizationResponse.md) |  | [optional]
+**zero_dollar_authorization_response** | [**\Piksel\KigoPro\Model\CreditCardAuthorizationResponse**](CreditCardAuthorizationResponse.md) |  | [optional]
 **advance_payment_status** | **string** | Advance Payment Status | [optional]
-**advance_payment_response** | [**\Piksel\Kigo\ChannelsV2\Model\CreditCardAuthorizationResponse**](CreditCardAuthorizationResponse.md) |  | [optional]
-**value** | [**\Piksel\Kigo\ChannelsV2\Model\Booking**](Booking.md) |  | [optional]
+**advance_payment_response** | [**\Piksel\KigoPro\Model\CreditCardAuthorizationResponse**](CreditCardAuthorizationResponse.md) |  | [optional]
+**value** | [**\Piksel\KigoPro\Model\Booking**](Booking.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

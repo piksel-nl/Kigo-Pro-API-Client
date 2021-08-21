@@ -4,8 +4,8 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  Piksel\Kigo
- * @author   Piksel
+ * @package  Piksel\KigoPro
+ * @author   Patrick Leijser
  * @link     https://piksel.nl
  */
 
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Piksel\Kigo;
+namespace Piksel\KigoPro;
 
 use \Exception;
 
@@ -33,8 +33,8 @@ use \Exception;
  * ApiException Class Doc Comment
  *
  * @category Class
- * @package  Piksel\Kigo
- * @author   Piksel
+ * @package  Piksel\KigoPro
+ * @author   Patrick Leijser
  * @link     https://piksel.nl
  */
 class ApiException extends Exception

@@ -1,4 +1,4 @@
-# Piksel\Kigo\RateApi
+# Piksel\KigoPro\RateApi
 
 All URIs are relative to https://www.kigoapis.com.
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 ## `proV1PropertiesIdRatesGet()`
 
 ```php
-proV1PropertiesIdRatesGet($id, $start_date, $end_date): \Piksel\Kigo\ChannelsV2\Model\GetPropertyRateVm[]
+proV1PropertiesIdRatesGet($id, $start_date, $end_date): \Piksel\KigoPro\Model\GetPropertyRateVm[]
 ```
 
 
@@ -24,10 +24,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Piksel\Kigo\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Piksel\KigoPro\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Piksel\Kigo\ChannelsV2\Api\RateApi(
+$apiInstance = new Piksel\KigoPro\Api\RateApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -55,7 +55,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Piksel\Kigo\ChannelsV2\Model\GetPropertyRateVm[]**](../Model/GetPropertyRateVm.md)
+[**\Piksel\KigoPro\Model\GetPropertyRateVm[]**](../Model/GetPropertyRateVm.md)
 
 ### Authorization
 
@@ -73,7 +73,7 @@ Name | Type | Description  | Notes
 ## `proV1PropertiesIdRatesPost()`
 
 ```php
-proV1PropertiesIdRatesPost($id, $set_property_rate_dto): \Piksel\Kigo\ChannelsV2\Model\BooleanCommandOkEnvelope
+proV1PropertiesIdRatesPost($id, $set_property_rate_dto): \Piksel\KigoPro\Model\BooleanCommandOkEnvelope
 ```
 
 
@@ -86,17 +86,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Piksel\Kigo\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Piksel\KigoPro\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Piksel\Kigo\ChannelsV2\Api\RateApi(
+$apiInstance = new Piksel\KigoPro\Api\RateApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = 56; // int
-$set_property_rate_dto = array(new \Piksel\Kigo\ChannelsV2\Model\SetPropertyRateDto()); // \Piksel\Kigo\ChannelsV2\Model\SetPropertyRateDto[]
+$set_property_rate_dto = array(new \Piksel\KigoPro\Model\SetPropertyRateDto()); // \Piksel\KigoPro\Model\SetPropertyRateDto[]
 
 try {
     $result = $apiInstance->proV1PropertiesIdRatesPost($id, $set_property_rate_dto);
@@ -111,11 +111,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**|  |
- **set_property_rate_dto** | [**\Piksel\Kigo\ChannelsV2\Model\SetPropertyRateDto[]**](../Model/SetPropertyRateDto.md)|  | [optional]
+ **set_property_rate_dto** | [**\Piksel\KigoPro\Model\SetPropertyRateDto[]**](../Model/SetPropertyRateDto.md)|  | [optional]
 
 ### Return type
 
-[**\Piksel\Kigo\ChannelsV2\Model\BooleanCommandOkEnvelope**](../Model/BooleanCommandOkEnvelope.md)
+[**\Piksel\KigoPro\Model\BooleanCommandOkEnvelope**](../Model/BooleanCommandOkEnvelope.md)
 
 ### Authorization
 

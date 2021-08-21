@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**errors** | [**\Piksel\Kigo\ChannelsV2\Model\ValidationErrorItem[]**](ValidationErrorItem.md) |  | [optional]
+**errors** | [**\Piksel\KigoPro\Model\ValidationErrorItem[]**](ValidationErrorItem.md) |  | [optional]
 **stack_trace** | **string** |  | [optional] [readonly]
 **message** | **string** |  | [optional]
 **data** | **array<string,object>** |  | [optional] [readonly]

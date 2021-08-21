@@ -15,9 +15,9 @@ Name | Type | Description | Notes
 **listing_id** | **int** | Listing ID  If passed, the system will be forced to use this.  If null, the system will use the current listing. | [optional]
 **location_id** | **int** | Location ID.  If passed, the system will be forced to use this.  If null, the system will find the first available unit, giving preference to the current one but can end up in change of unit. | [optional]
 **total_amount** | **double** |  | [optional]
-**renter** | [**\Piksel\Kigo\ChannelsV2\Model\Person**](Person.md) |  | [optional]
+**renter** | [**\Piksel\KigoPro\Model\Person**](Person.md) |  | [optional]
 **payment_collection_mode** | **string** |  | [optional]
 **payment_collection_scheduled_date** | [**\DateTime**](\DateTime.md) |  | [optional]
-**payment_schedule** | [**\Piksel\Kigo\ChannelsV2\Model\PaymentScheduleRequest**](PaymentScheduleRequest.md) |  | [optional]
+**payment_schedule** | [**\Piksel\KigoPro\Model\PaymentScheduleRequest**](PaymentScheduleRequest.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

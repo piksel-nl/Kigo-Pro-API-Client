@@ -8387,6 +8387,10 @@
               "Expedia"
             ],
             "type": "string"
+          },
+          "websiteUrl": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false

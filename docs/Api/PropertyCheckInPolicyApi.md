@@ -1,4 +1,4 @@
-# Piksel\Kigo\PropertyCheckInPolicyApi
+# Piksel\KigoPro\PropertyCheckInPolicyApi
 
 All URIs are relative to https://www.kigoapis.com.
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 ## `proV1ContentPropertiesIdCheckinpolicyGet()`
 
 ```php
-proV1ContentPropertiesIdCheckinpolicyGet($id): \Piksel\Kigo\ChannelsV2\Model\GetCheckInPolicyVm
+proV1ContentPropertiesIdCheckinpolicyGet($id): \Piksel\KigoPro\Model\GetCheckInPolicyVm
 ```
 
 
@@ -24,10 +24,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Piksel\Kigo\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Piksel\KigoPro\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Piksel\Kigo\ChannelsV2\Api\PropertyCheckInPolicyApi(
+$apiInstance = new Piksel\KigoPro\Api\PropertyCheckInPolicyApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -51,7 +51,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Piksel\Kigo\ChannelsV2\Model\GetCheckInPolicyVm**](../Model/GetCheckInPolicyVm.md)
+[**\Piksel\KigoPro\Model\GetCheckInPolicyVm**](../Model/GetCheckInPolicyVm.md)
 
 ### Authorization
 
@@ -69,7 +69,7 @@ Name | Type | Description  | Notes
 ## `proV1ContentPropertiesIdCheckinpolicyPut()`
 
 ```php
-proV1ContentPropertiesIdCheckinpolicyPut($id, $put_check_in_policy_command): \Piksel\Kigo\ChannelsV2\Model\BooleanCommandOkEnvelope
+proV1ContentPropertiesIdCheckinpolicyPut($id, $put_check_in_policy_command): \Piksel\KigoPro\Model\BooleanCommandOkEnvelope
 ```
 
 
@@ -82,17 +82,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Piksel\Kigo\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Piksel\KigoPro\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Piksel\Kigo\ChannelsV2\Api\PropertyCheckInPolicyApi(
+$apiInstance = new Piksel\KigoPro\Api\PropertyCheckInPolicyApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = 56; // int
-$put_check_in_policy_command = new \Piksel\Kigo\ChannelsV2\Model\PutCheckInPolicyCommand(); // \Piksel\Kigo\ChannelsV2\Model\PutCheckInPolicyCommand
+$put_check_in_policy_command = new \Piksel\KigoPro\Model\PutCheckInPolicyCommand(); // \Piksel\KigoPro\Model\PutCheckInPolicyCommand
 
 try {
     $result = $apiInstance->proV1ContentPropertiesIdCheckinpolicyPut($id, $put_check_in_policy_command);
@@ -107,11 +107,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**|  |
- **put_check_in_policy_command** | [**\Piksel\Kigo\ChannelsV2\Model\PutCheckInPolicyCommand**](../Model/PutCheckInPolicyCommand.md)|  | [optional]
+ **put_check_in_policy_command** | [**\Piksel\KigoPro\Model\PutCheckInPolicyCommand**](../Model/PutCheckInPolicyCommand.md)|  | [optional]
 
 ### Return type
 
-[**\Piksel\Kigo\ChannelsV2\Model\BooleanCommandOkEnvelope**](../Model/BooleanCommandOkEnvelope.md)
+[**\Piksel\KigoPro\Model\BooleanCommandOkEnvelope**](../Model/BooleanCommandOkEnvelope.md)
 
 ### Authorization
 

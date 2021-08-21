@@ -1,4 +1,4 @@
-# Piksel\Kigo\PropertyMediaApi
+# Piksel\KigoPro\PropertyMediaApi
 
 All URIs are relative to https://www.kigoapis.com.
 
@@ -14,7 +14,7 @@ Method | HTTP request | Description
 ## `proV1ContentPropertiesIdMediasGet()`
 
 ```php
-proV1ContentPropertiesIdMediasGet($id): \Piksel\Kigo\ChannelsV2\Model\GetPropertyMediaVm
+proV1ContentPropertiesIdMediasGet($id): \Piksel\KigoPro\Model\GetPropertyMediaVm
 ```
 
 
@@ -27,10 +27,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Piksel\Kigo\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Piksel\KigoPro\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Piksel\Kigo\ChannelsV2\Api\PropertyMediaApi(
+$apiInstance = new Piksel\KigoPro\Api\PropertyMediaApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -54,7 +54,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Piksel\Kigo\ChannelsV2\Model\GetPropertyMediaVm**](../Model/GetPropertyMediaVm.md)
+[**\Piksel\KigoPro\Model\GetPropertyMediaVm**](../Model/GetPropertyMediaVm.md)
 
 ### Authorization
 
@@ -72,7 +72,7 @@ Name | Type | Description  | Notes
 ## `proV1ContentPropertiesIdMediasImagesPost()`
 
 ```php
-proV1ContentPropertiesIdMediasImagesPost($id, $post_property_media_command): \Piksel\Kigo\ChannelsV2\Model\Int32CommandOkEnvelope
+proV1ContentPropertiesIdMediasImagesPost($id, $post_property_media_command): \Piksel\KigoPro\Model\Int32CommandOkEnvelope
 ```
 
 
@@ -85,17 +85,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Piksel\Kigo\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Piksel\KigoPro\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Piksel\Kigo\ChannelsV2\Api\PropertyMediaApi(
+$apiInstance = new Piksel\KigoPro\Api\PropertyMediaApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = 56; // int
-$post_property_media_command = new \Piksel\Kigo\ChannelsV2\Model\PostPropertyMediaCommand(); // \Piksel\Kigo\ChannelsV2\Model\PostPropertyMediaCommand
+$post_property_media_command = new \Piksel\KigoPro\Model\PostPropertyMediaCommand(); // \Piksel\KigoPro\Model\PostPropertyMediaCommand
 
 try {
     $result = $apiInstance->proV1ContentPropertiesIdMediasImagesPost($id, $post_property_media_command);
@@ -110,11 +110,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**|  |
- **post_property_media_command** | [**\Piksel\Kigo\ChannelsV2\Model\PostPropertyMediaCommand**](../Model/PostPropertyMediaCommand.md)|  | [optional]
+ **post_property_media_command** | [**\Piksel\KigoPro\Model\PostPropertyMediaCommand**](../Model/PostPropertyMediaCommand.md)|  | [optional]
 
 ### Return type
 
-[**\Piksel\Kigo\ChannelsV2\Model\Int32CommandOkEnvelope**](../Model/Int32CommandOkEnvelope.md)
+[**\Piksel\KigoPro\Model\Int32CommandOkEnvelope**](../Model/Int32CommandOkEnvelope.md)
 
 ### Authorization
 
@@ -132,7 +132,7 @@ Name | Type | Description  | Notes
 ## `proV1ContentPropertiesIdMediasMediaIdDelete()`
 
 ```php
-proV1ContentPropertiesIdMediasMediaIdDelete($id, $media_id): \Piksel\Kigo\ChannelsV2\Model\BooleanCommandOkEnvelope
+proV1ContentPropertiesIdMediasMediaIdDelete($id, $media_id): \Piksel\KigoPro\Model\BooleanCommandOkEnvelope
 ```
 
 
@@ -145,10 +145,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Piksel\Kigo\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Piksel\KigoPro\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Piksel\Kigo\ChannelsV2\Api\PropertyMediaApi(
+$apiInstance = new Piksel\KigoPro\Api\PropertyMediaApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -174,7 +174,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Piksel\Kigo\ChannelsV2\Model\BooleanCommandOkEnvelope**](../Model/BooleanCommandOkEnvelope.md)
+[**\Piksel\KigoPro\Model\BooleanCommandOkEnvelope**](../Model/BooleanCommandOkEnvelope.md)
 
 ### Authorization
 
@@ -192,7 +192,7 @@ Name | Type | Description  | Notes
 ## `proV1ContentPropertiesIdMediasMediaIdPut()`
 
 ```php
-proV1ContentPropertiesIdMediasMediaIdPut($id, $media_id, $put_property_media_tags_and_order_command): \Piksel\Kigo\ChannelsV2\Model\BooleanCommandOkEnvelope
+proV1ContentPropertiesIdMediasMediaIdPut($id, $media_id, $put_property_media_tags_and_order_command): \Piksel\KigoPro\Model\BooleanCommandOkEnvelope
 ```
 
 
@@ -205,10 +205,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Piksel\Kigo\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Piksel\KigoPro\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Piksel\Kigo\ChannelsV2\Api\PropertyMediaApi(
+$apiInstance = new Piksel\KigoPro\Api\PropertyMediaApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -216,7 +216,7 @@ $apiInstance = new Piksel\Kigo\ChannelsV2\Api\PropertyMediaApi(
 );
 $id = 56; // int
 $media_id = 56; // int
-$put_property_media_tags_and_order_command = new \Piksel\Kigo\ChannelsV2\Model\PutPropertyMediaTagsAndOrderCommand(); // \Piksel\Kigo\ChannelsV2\Model\PutPropertyMediaTagsAndOrderCommand
+$put_property_media_tags_and_order_command = new \Piksel\KigoPro\Model\PutPropertyMediaTagsAndOrderCommand(); // \Piksel\KigoPro\Model\PutPropertyMediaTagsAndOrderCommand
 
 try {
     $result = $apiInstance->proV1ContentPropertiesIdMediasMediaIdPut($id, $media_id, $put_property_media_tags_and_order_command);
@@ -232,11 +232,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**|  |
  **media_id** | **int**|  |
- **put_property_media_tags_and_order_command** | [**\Piksel\Kigo\ChannelsV2\Model\PutPropertyMediaTagsAndOrderCommand**](../Model/PutPropertyMediaTagsAndOrderCommand.md)|  | [optional]
+ **put_property_media_tags_and_order_command** | [**\Piksel\KigoPro\Model\PutPropertyMediaTagsAndOrderCommand**](../Model/PutPropertyMediaTagsAndOrderCommand.md)|  | [optional]
 
 ### Return type
 
-[**\Piksel\Kigo\ChannelsV2\Model\BooleanCommandOkEnvelope**](../Model/BooleanCommandOkEnvelope.md)
+[**\Piksel\KigoPro\Model\BooleanCommandOkEnvelope**](../Model/BooleanCommandOkEnvelope.md)
 
 ### Authorization
 
@@ -254,7 +254,7 @@ Name | Type | Description  | Notes
 ## `proV1ContentPropertiesMediatagsGet()`
 
 ```php
-proV1ContentPropertiesMediatagsGet(): \Piksel\Kigo\ChannelsV2\Model\GetMediaTagsTagVm[]
+proV1ContentPropertiesMediatagsGet(): \Piksel\KigoPro\Model\GetMediaTagsTagVm[]
 ```
 
 
@@ -267,10 +267,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Piksel\Kigo\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Piksel\KigoPro\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Piksel\Kigo\ChannelsV2\Api\PropertyMediaApi(
+$apiInstance = new Piksel\KigoPro\Api\PropertyMediaApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -291,7 +291,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Piksel\Kigo\ChannelsV2\Model\GetMediaTagsTagVm[]**](../Model/GetMediaTagsTagVm.md)
+[**\Piksel\KigoPro\Model\GetMediaTagsTagVm[]**](../Model/GetMediaTagsTagVm.md)
 
 ### Authorization
 

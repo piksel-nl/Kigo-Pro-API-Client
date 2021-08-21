@@ -12,10 +12,11 @@ Name | Type | Description | Notes
 **is_enabled** | **bool** | True if the Channel Connection is enabled | [optional]
 **marketing_fee** | **double** | Marketing Fee | [optional]
 **modified_date** | [**\DateTime**](\DateTime.md) | DateTime of the last change to this Channel Connection | [optional]
-**account** | [**\Piksel\Kigo\ChannelsV2\Model\Account**](Account.md) |  | [optional]
+**account** | [**\Piksel\KigoPro\Model\Account**](Account.md) |  | [optional]
 **external_id** | **string** | The Unique identifier of the channel connection from the PMS (e.g. SyncLinkID in KVRS) | [optional]
 **requires_credit_card** | **bool** | If true, a Credit Card is required for a Booking | [optional]
 **metadata** | **object** | Channel connection metadata | [optional]
 **listing_collection_type** | **string** |  | [optional]
+**website_url** | **string** |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

@@ -1,4 +1,4 @@
-# Piksel\Kigo\PropertyDescriptionsApi
+# Piksel\KigoPro\PropertyDescriptionsApi
 
 All URIs are relative to https://www.kigoapis.com.
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 ## `proV1ContentPropertiesIdDescriptionsGet()`
 
 ```php
-proV1ContentPropertiesIdDescriptionsGet($id): \Piksel\Kigo\ChannelsV2\Model\GetPropertyDescriptionsVm
+proV1ContentPropertiesIdDescriptionsGet($id): \Piksel\KigoPro\Model\GetPropertyDescriptionsVm
 ```
 
 
@@ -24,10 +24,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Piksel\Kigo\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Piksel\KigoPro\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Piksel\Kigo\ChannelsV2\Api\PropertyDescriptionsApi(
+$apiInstance = new Piksel\KigoPro\Api\PropertyDescriptionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -51,7 +51,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Piksel\Kigo\ChannelsV2\Model\GetPropertyDescriptionsVm**](../Model/GetPropertyDescriptionsVm.md)
+[**\Piksel\KigoPro\Model\GetPropertyDescriptionsVm**](../Model/GetPropertyDescriptionsVm.md)
 
 ### Authorization
 
@@ -69,7 +69,7 @@ Name | Type | Description  | Notes
 ## `proV1ContentPropertiesIdDescriptionsPut()`
 
 ```php
-proV1ContentPropertiesIdDescriptionsPut($id, $put_property_descriptions_command): \Piksel\Kigo\ChannelsV2\Model\BooleanCommandOkEnvelope
+proV1ContentPropertiesIdDescriptionsPut($id, $put_property_descriptions_command): \Piksel\KigoPro\Model\BooleanCommandOkEnvelope
 ```
 
 
@@ -82,17 +82,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Piksel\Kigo\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Piksel\KigoPro\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Piksel\Kigo\ChannelsV2\Api\PropertyDescriptionsApi(
+$apiInstance = new Piksel\KigoPro\Api\PropertyDescriptionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = 56; // int
-$put_property_descriptions_command = new \Piksel\Kigo\ChannelsV2\Model\PutPropertyDescriptionsCommand(); // \Piksel\Kigo\ChannelsV2\Model\PutPropertyDescriptionsCommand
+$put_property_descriptions_command = new \Piksel\KigoPro\Model\PutPropertyDescriptionsCommand(); // \Piksel\KigoPro\Model\PutPropertyDescriptionsCommand
 
 try {
     $result = $apiInstance->proV1ContentPropertiesIdDescriptionsPut($id, $put_property_descriptions_command);
@@ -107,11 +107,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**|  |
- **put_property_descriptions_command** | [**\Piksel\Kigo\ChannelsV2\Model\PutPropertyDescriptionsCommand**](../Model/PutPropertyDescriptionsCommand.md)|  | [optional]
+ **put_property_descriptions_command** | [**\Piksel\KigoPro\Model\PutPropertyDescriptionsCommand**](../Model/PutPropertyDescriptionsCommand.md)|  | [optional]
 
 ### Return type
 
-[**\Piksel\Kigo\ChannelsV2\Model\BooleanCommandOkEnvelope**](../Model/BooleanCommandOkEnvelope.md)
+[**\Piksel\KigoPro\Model\BooleanCommandOkEnvelope**](../Model/BooleanCommandOkEnvelope.md)
 
 ### Authorization
 

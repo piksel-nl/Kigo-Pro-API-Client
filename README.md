@@ -1,8 +1,6 @@
-# Kigo API Client
+# OpenAPIClient-php
 
-This PHP API Client supports the following Kigo API's.
-
-- https://www.kigoapis.com/pro/v1/swagger/?urls.primaryName=Channel%20Manager%20API%20v2
+https://www.kigoapis.com/pro/v1/swagger/?urls.primaryName=Channel%20Manager%20API%20v2
 
 
 ## Installation & Usage
@@ -24,7 +22,7 @@ To install the bindings via [Composer](https://getcomposer.org/), add the follow
     }
   ],
   "require": {
-    "piksel-nl/Kigo-Pro-API-Client": "*@dev"
+    "piksel-nl/kigo-pro-api-client": "*@dev"
   }
 }
 ```
@@ -37,7 +35,7 @@ Download the files and include `autoload.php`:
 
 ```php
 <?php
-require_once('/path/to/Kigo-Pro-API-Client/vendor/autoload.php');
+require_once('/path/to/vendor/autoload.php');
 ```
 
 ## Getting Started
@@ -51,10 +49,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Piksel\Kigo\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Piksel\KigoPro\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Piksel\Kigo\ChannelsV2\Api\BookingApi(
+$apiInstance = new Piksel\KigoPro\Api\BookingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),

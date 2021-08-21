@@ -1,4 +1,4 @@
-# Piksel\Kigo\ChannelConnectionApi
+# Piksel\KigoPro\ChannelConnectionApi
 
 All URIs are relative to https://www.kigoapis.com.
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 ## `channelsV2ConnectionsGet()`
 
 ```php
-channelsV2ConnectionsGet($options): \Piksel\Kigo\ChannelsV2\Model\ChannelConnectionResource
+channelsV2ConnectionsGet($options): \Piksel\KigoPro\Model\ChannelConnectionResource
 ```
 
 Get Channel Connection
@@ -23,10 +23,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Piksel\Kigo\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Piksel\KigoPro\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Piksel\Kigo\ChannelsV2\Api\ChannelConnectionApi(
+$apiInstance = new Piksel\KigoPro\Api\ChannelConnectionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -50,7 +50,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Piksel\Kigo\ChannelsV2\Model\ChannelConnectionResource**](../Model/ChannelConnectionResource.md)
+[**\Piksel\KigoPro\Model\ChannelConnectionResource**](../Model/ChannelConnectionResource.md)
 
 ### Authorization
 

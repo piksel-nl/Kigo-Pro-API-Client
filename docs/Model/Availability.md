@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**dates** | [**\Piksel\Kigo\ChannelsV2\Model\AvailabilityDay[]**](AvailabilityDay.md) | Availability Calendar | [optional]
+**dates** | [**\Piksel\KigoPro\Model\AvailabilityDay[]**](AvailabilityDay.md) | Availability Calendar | [optional]
 **is_valid** | **bool** | If the Availability is valid | [optional]
 **error_message** | **string** | Optional Error Message | [optional]
 **setup_error** | **string** | Optional Error Code related to the Listing setup that is checked | [optional]

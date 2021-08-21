@@ -6,8 +6,8 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **listing_id** | **int** | Listing ID |
 **payment_plan_guid** | **string** | Payment Plan Guid |
-**renter** | [**\Piksel\Kigo\ChannelsV2\Model\PostPersonRequest**](PostPersonRequest.md) |  |
-**credit_card** | [**\Piksel\Kigo\ChannelsV2\Model\CreditCard**](CreditCard.md) |  | [optional]
+**renter** | [**\Piksel\KigoPro\Model\PostPersonRequest**](PostPersonRequest.md) |  |
+**credit_card** | [**\Piksel\KigoPro\Model\CreditCard**](CreditCard.md) |  | [optional]
 **external_booking_id** | **string** | External ID coming from the Channel | [optional]
 **notes** | **string** | Notes | [optional]
 **special_needs** | **string** | Special Needs | [optional]

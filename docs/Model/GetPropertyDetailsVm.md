@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**property_names** | [**\Piksel\Kigo\ChannelsV2\Model\GetPropertyDetailsPublicNameDto[]**](GetPropertyDetailsPublicNameDto.md) |  | [optional]
+**property_names** | [**\Piksel\KigoPro\Model\GetPropertyDetailsPublicNameDto[]**](GetPropertyDetailsPublicNameDto.md) |  | [optional]
 **internal_name** | **string** |  | [optional]
 **category_type** | **string** |  | [optional]
 **year_built** | **int** |  | [optional]

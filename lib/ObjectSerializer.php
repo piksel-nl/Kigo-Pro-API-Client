@@ -5,8 +5,8 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  Piksel\Kigo
- * @author   Piksel
+ * @package  Piksel\KigoPro
+ * @author   Patrick Leijser
  * @link     https://piksel.nl
  */
 
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Piksel\Kigo;
+namespace Piksel\KigoPro;
 
-use Piksel\Kigo\ChannelsV2\Model\ModelInterface;
+use Piksel\KigoPro\Model\ModelInterface;
 
 /**
  * ObjectSerializer Class Doc Comment
  *
  * @category Class
- * @package  Piksel\Kigo
- * @author   Piksel
+ * @package  Piksel\KigoPro
+ * @author   Patrick Leijser
  * @link     https://piksel.nl
  */
 class ObjectSerializer
@@ -364,7 +364,7 @@ class ObjectSerializer
             // If a discriminator is defined and points to a valid subclass, use it.
             $discriminator = $class::DISCRIMINATOR;
             if (!empty($discriminator) && isset($data->{$discriminator}) && is_string($data->{$discriminator})) {
-                $subclass = '\Piksel\Kigo\ChannelsV2\Model\\' . $data->{$discriminator};
+                $subclass = '\Piksel\KigoPro\Model\\' . $data->{$discriminator};
                 if (is_subclass_of($subclass, $class)) {
                     $class = $subclass;
                 }

@@ -1,4 +1,4 @@
-# Piksel\Kigo\ListingApi
+# Piksel\KigoPro\ListingApi
 
 All URIs are relative to https://www.kigoapis.com.
 
@@ -16,7 +16,7 @@ Method | HTTP request | Description
 ## `channelsV2ListingsDiffGet()`
 
 ```php
-channelsV2ListingsDiffGet($modified_after, $options): \Piksel\Kigo\ChannelsV2\Model\GetDiffResult
+channelsV2ListingsDiffGet($modified_after, $options): \Piksel\KigoPro\Model\GetDiffResult
 ```
 
 Get all the Listings where Price, Availability or Content has changed, after a given time
@@ -29,10 +29,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Piksel\Kigo\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Piksel\KigoPro\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Piksel\Kigo\ChannelsV2\Api\ListingApi(
+$apiInstance = new Piksel\KigoPro\Api\ListingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -58,7 +58,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Piksel\Kigo\ChannelsV2\Model\GetDiffResult**](../Model/GetDiffResult.md)
+[**\Piksel\KigoPro\Model\GetDiffResult**](../Model/GetDiffResult.md)
 
 ### Authorization
 
@@ -76,7 +76,7 @@ Name | Type | Description  | Notes
 ## `channelsV2ListingsGet()`
 
 ```php
-channelsV2ListingsGet($cc_id): \Piksel\Kigo\ChannelsV2\Model\GetListingsResultListResourceList
+channelsV2ListingsGet($cc_id): \Piksel\KigoPro\Model\GetListingsResultListResourceList
 ```
 
 Get all listings associated to a requested channel
@@ -89,10 +89,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Piksel\Kigo\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Piksel\KigoPro\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Piksel\Kigo\ChannelsV2\Api\ListingApi(
+$apiInstance = new Piksel\KigoPro\Api\ListingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -116,7 +116,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Piksel\Kigo\ChannelsV2\Model\GetListingsResultListResourceList**](../Model/GetListingsResultListResourceList.md)
+[**\Piksel\KigoPro\Model\GetListingsResultListResourceList**](../Model/GetListingsResultListResourceList.md)
 
 ### Authorization
 
@@ -134,7 +134,7 @@ Name | Type | Description  | Notes
 ## `channelsV2ListingsIdAvailabilityGet()`
 
 ```php
-channelsV2ListingsIdAvailabilityGet($id, $start_date, $end_date): \Piksel\Kigo\ChannelsV2\Model\AvailabilityResource
+channelsV2ListingsIdAvailabilityGet($id, $start_date, $end_date): \Piksel\KigoPro\Model\AvailabilityResource
 ```
 
 Get Availability Feed
@@ -147,10 +147,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Piksel\Kigo\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Piksel\KigoPro\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Piksel\Kigo\ChannelsV2\Api\ListingApi(
+$apiInstance = new Piksel\KigoPro\Api\ListingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -178,7 +178,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Piksel\Kigo\ChannelsV2\Model\AvailabilityResource**](../Model/AvailabilityResource.md)
+[**\Piksel\KigoPro\Model\AvailabilityResource**](../Model/AvailabilityResource.md)
 
 ### Authorization
 
@@ -196,7 +196,7 @@ Name | Type | Description  | Notes
 ## `channelsV2ListingsIdCheckavailabilityGet()`
 
 ```php
-channelsV2ListingsIdCheckavailabilityGet($id, $check_in_date, $check_out_date, $num_adults, $num_children): \Piksel\Kigo\ChannelsV2\Model\CheckAvailabilityOutputResource
+channelsV2ListingsIdCheckavailabilityGet($id, $check_in_date, $check_out_date, $num_adults, $num_children): \Piksel\KigoPro\Model\CheckAvailabilityOutputResource
 ```
 
 Check if a Listing is available
@@ -209,10 +209,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Piksel\Kigo\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Piksel\KigoPro\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Piksel\Kigo\ChannelsV2\Api\ListingApi(
+$apiInstance = new Piksel\KigoPro\Api\ListingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -244,7 +244,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Piksel\Kigo\ChannelsV2\Model\CheckAvailabilityOutputResource**](../Model/CheckAvailabilityOutputResource.md)
+[**\Piksel\KigoPro\Model\CheckAvailabilityOutputResource**](../Model/CheckAvailabilityOutputResource.md)
 
 ### Authorization
 
@@ -262,7 +262,7 @@ Name | Type | Description  | Notes
 ## `channelsV2ListingsIdGet()`
 
 ```php
-channelsV2ListingsIdGet($id, $options): \Piksel\Kigo\ChannelsV2\Model\ListingResource
+channelsV2ListingsIdGet($id, $options): \Piksel\KigoPro\Model\ListingResource
 ```
 
 Get a listing
@@ -275,10 +275,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Piksel\Kigo\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Piksel\KigoPro\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Piksel\Kigo\ChannelsV2\Api\ListingApi(
+$apiInstance = new Piksel\KigoPro\Api\ListingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -304,7 +304,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Piksel\Kigo\ChannelsV2\Model\ListingResource**](../Model/ListingResource.md)
+[**\Piksel\KigoPro\Model\ListingResource**](../Model/ListingResource.md)
 
 ### Authorization
 
@@ -335,10 +335,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Piksel\Kigo\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Piksel\KigoPro\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Piksel\Kigo\ChannelsV2\Api\ListingApi(
+$apiInstance = new Piksel\KigoPro\Api\ListingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -387,7 +387,7 @@ void (empty response body)
 ## `channelsV2ListingsIdRatesGet()`
 
 ```php
-channelsV2ListingsIdRatesGet($id, $start_date, $end_date, $payment_plan_guid): \Piksel\Kigo\ChannelsV2\Model\RateScheduleResource
+channelsV2ListingsIdRatesGet($id, $start_date, $end_date, $payment_plan_guid): \Piksel\KigoPro\Model\RateScheduleResource
 ```
 
 Get contract-aware Rates Feed
@@ -400,10 +400,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Piksel\Kigo\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Piksel\KigoPro\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Piksel\Kigo\ChannelsV2\Api\ListingApi(
+$apiInstance = new Piksel\KigoPro\Api\ListingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -433,7 +433,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Piksel\Kigo\ChannelsV2\Model\RateScheduleResource**](../Model/RateScheduleResource.md)
+[**\Piksel\KigoPro\Model\RateScheduleResource**](../Model/RateScheduleResource.md)
 
 ### Authorization
 

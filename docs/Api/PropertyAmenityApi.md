@@ -1,4 +1,4 @@
-# Piksel\Kigo\PropertyAmenityApi
+# Piksel\KigoPro\PropertyAmenityApi
 
 All URIs are relative to https://www.kigoapis.com.
 
@@ -12,7 +12,7 @@ Method | HTTP request | Description
 ## `proV1ContentPropertiesAmenitiesGet()`
 
 ```php
-proV1ContentPropertiesAmenitiesGet(): \Piksel\Kigo\ChannelsV2\Model\GetAmenitiesMainAmenityVmListResourceList
+proV1ContentPropertiesAmenitiesGet(): \Piksel\KigoPro\Model\GetAmenitiesMainAmenityVmListResourceList
 ```
 
 
@@ -25,10 +25,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Piksel\Kigo\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Piksel\KigoPro\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Piksel\Kigo\ChannelsV2\Api\PropertyAmenityApi(
+$apiInstance = new Piksel\KigoPro\Api\PropertyAmenityApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -49,7 +49,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Piksel\Kigo\ChannelsV2\Model\GetAmenitiesMainAmenityVmListResourceList**](../Model/GetAmenitiesMainAmenityVmListResourceList.md)
+[**\Piksel\KigoPro\Model\GetAmenitiesMainAmenityVmListResourceList**](../Model/GetAmenitiesMainAmenityVmListResourceList.md)
 
 ### Authorization
 
@@ -67,7 +67,7 @@ This endpoint does not need any parameter.
 ## `proV1ContentPropertiesIdAmenitiesGet()`
 
 ```php
-proV1ContentPropertiesIdAmenitiesGet($id): \Piksel\Kigo\ChannelsV2\Model\GetPropertyAmentiesVm
+proV1ContentPropertiesIdAmenitiesGet($id): \Piksel\KigoPro\Model\GetPropertyAmentiesVm
 ```
 
 
@@ -80,10 +80,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Piksel\Kigo\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Piksel\KigoPro\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Piksel\Kigo\ChannelsV2\Api\PropertyAmenityApi(
+$apiInstance = new Piksel\KigoPro\Api\PropertyAmenityApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -107,7 +107,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Piksel\Kigo\ChannelsV2\Model\GetPropertyAmentiesVm**](../Model/GetPropertyAmentiesVm.md)
+[**\Piksel\KigoPro\Model\GetPropertyAmentiesVm**](../Model/GetPropertyAmentiesVm.md)
 
 ### Authorization
 
@@ -125,7 +125,7 @@ Name | Type | Description  | Notes
 ## `proV1ContentPropertiesIdAmenitiesPut()`
 
 ```php
-proV1ContentPropertiesIdAmenitiesPut($id, $put_property_amenities_command): \Piksel\Kigo\ChannelsV2\Model\BooleanCommandOkEnvelope
+proV1ContentPropertiesIdAmenitiesPut($id, $put_property_amenities_command): \Piksel\KigoPro\Model\BooleanCommandOkEnvelope
 ```
 
 
@@ -138,17 +138,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Piksel\Kigo\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Piksel\KigoPro\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Piksel\Kigo\ChannelsV2\Api\PropertyAmenityApi(
+$apiInstance = new Piksel\KigoPro\Api\PropertyAmenityApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = 56; // int
-$put_property_amenities_command = new \Piksel\Kigo\ChannelsV2\Model\PutPropertyAmenitiesCommand(); // \Piksel\Kigo\ChannelsV2\Model\PutPropertyAmenitiesCommand
+$put_property_amenities_command = new \Piksel\KigoPro\Model\PutPropertyAmenitiesCommand(); // \Piksel\KigoPro\Model\PutPropertyAmenitiesCommand
 
 try {
     $result = $apiInstance->proV1ContentPropertiesIdAmenitiesPut($id, $put_property_amenities_command);
@@ -163,11 +163,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**|  |
- **put_property_amenities_command** | [**\Piksel\Kigo\ChannelsV2\Model\PutPropertyAmenitiesCommand**](../Model/PutPropertyAmenitiesCommand.md)|  | [optional]
+ **put_property_amenities_command** | [**\Piksel\KigoPro\Model\PutPropertyAmenitiesCommand**](../Model/PutPropertyAmenitiesCommand.md)|  | [optional]
 
 ### Return type
 
-[**\Piksel\Kigo\ChannelsV2\Model\BooleanCommandOkEnvelope**](../Model/BooleanCommandOkEnvelope.md)
+[**\Piksel\KigoPro\Model\BooleanCommandOkEnvelope**](../Model/BooleanCommandOkEnvelope.md)
 
 ### Authorization
 

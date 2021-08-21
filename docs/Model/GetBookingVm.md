@@ -25,7 +25,7 @@ Name | Type | Description | Notes
 **cancelled_by_role** | **string** |  | [optional]
 **cancelled_by_user_id** | **int** |  | [optional]
 **cancellation_reason** | **string** |  | [optional]
-**cancellation_policy** | [**\Piksel\Kigo\ChannelsV2\Model\CancellationPolicyDto**](CancellationPolicyDto.md) |  | [optional]
+**cancellation_policy** | [**\Piksel\KigoPro\Model\CancellationPolicyDto**](CancellationPolicyDto.md) |  | [optional]
 **total_amount** | **double** |  | [optional]
 **currency** | **string** |  | [optional]
 

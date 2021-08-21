@@ -1,4 +1,4 @@
-# Piksel\Kigo\PropertyApi
+# Piksel\KigoPro\PropertyApi
 
 All URIs are relative to https://www.kigoapis.com.
 
@@ -27,10 +27,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Piksel\Kigo\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Piksel\KigoPro\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Piksel\Kigo\ChannelsV2\Api\PropertyApi(
+$apiInstance = new Piksel\KigoPro\Api\PropertyApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -73,7 +73,7 @@ void (empty response body)
 ## `proV1ContentPropertiesIdPropertysummaryGet()`
 
 ```php
-proV1ContentPropertiesIdPropertysummaryGet($id): \Piksel\Kigo\ChannelsV2\Model\GetPropertySummaryVm
+proV1ContentPropertiesIdPropertysummaryGet($id): \Piksel\KigoPro\Model\GetPropertySummaryVm
 ```
 
 
@@ -86,10 +86,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Piksel\Kigo\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Piksel\KigoPro\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Piksel\Kigo\ChannelsV2\Api\PropertyApi(
+$apiInstance = new Piksel\KigoPro\Api\PropertyApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -113,7 +113,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Piksel\Kigo\ChannelsV2\Model\GetPropertySummaryVm**](../Model/GetPropertySummaryVm.md)
+[**\Piksel\KigoPro\Model\GetPropertySummaryVm**](../Model/GetPropertySummaryVm.md)
 
 ### Authorization
 
@@ -144,10 +144,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Piksel\Kigo\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Piksel\KigoPro\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Piksel\Kigo\ChannelsV2\Api\PropertyApi(
+$apiInstance = new Piksel\KigoPro\Api\PropertyApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -205,10 +205,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Piksel\Kigo\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Piksel\KigoPro\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Piksel\Kigo\ChannelsV2\Api\PropertyApi(
+$apiInstance = new Piksel\KigoPro\Api\PropertyApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -255,7 +255,7 @@ void (empty response body)
 ## `proV1ContentPropertiesPost()`
 
 ```php
-proV1ContentPropertiesPost($create_property_command): \Piksel\Kigo\ChannelsV2\Model\CreatePropertyResponseVmCommandOkEnvelope
+proV1ContentPropertiesPost($create_property_command): \Piksel\KigoPro\Model\CreatePropertyResponseVmCommandOkEnvelope
 ```
 
 
@@ -268,16 +268,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauth2
-$config = Piksel\Kigo\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Piksel\KigoPro\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new Piksel\Kigo\ChannelsV2\Api\PropertyApi(
+$apiInstance = new Piksel\KigoPro\Api\PropertyApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$create_property_command = new \Piksel\Kigo\ChannelsV2\Model\CreatePropertyCommand(); // \Piksel\Kigo\ChannelsV2\Model\CreatePropertyCommand
+$create_property_command = new \Piksel\KigoPro\Model\CreatePropertyCommand(); // \Piksel\KigoPro\Model\CreatePropertyCommand
 
 try {
     $result = $apiInstance->proV1ContentPropertiesPost($create_property_command);
@@ -291,11 +291,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **create_property_command** | [**\Piksel\Kigo\ChannelsV2\Model\CreatePropertyCommand**](../Model/CreatePropertyCommand.md)|  | [optional]
+ **create_property_command** | [**\Piksel\KigoPro\Model\CreatePropertyCommand**](../Model/CreatePropertyCommand.md)|  | [optional]
 
 ### Return type
 
-[**\Piksel\Kigo\ChannelsV2\Model\CreatePropertyResponseVmCommandOkEnvelope**](../Model/CreatePropertyResponseVmCommandOkEnvelope.md)
+[**\Piksel\KigoPro\Model\CreatePropertyResponseVmCommandOkEnvelope**](../Model/CreatePropertyResponseVmCommandOkEnvelope.md)
 
 ### Authorization
 
