@@ -1,18 +1,17 @@
 # Piksel\KigoPro\QuoteApi
 
-All URIs are relative to https://www.kigoapis.com.
+All URIs are relative to *https://www.kigoapis.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**channelsV2QuotesPost()**](QuoteApi.md#channelsV2QuotesPost) | **POST** /channels/v2/quotes | Generate a quote given a desired QuoteContext
-[**channelsV2QuotesQuoteGuidBookPost()**](QuoteApi.md#channelsV2QuotesQuoteGuidBookPost) | **POST** /channels/v2/quotes/{quoteGuid}/book | Convert a Quote into a Booking
+[**channelsV2QuotesPost**](QuoteApi.md#channelsV2QuotesPost) | **POST** /channels/v2/quotes | Generate a quote given a desired QuoteContext
+[**channelsV2QuotesQuoteGuidBookPost**](QuoteApi.md#channelsV2QuotesQuoteGuidBookPost) | **POST** /channels/v2/quotes/{quoteGuid}/book | Convert a Quote into a Booking
 
 
-## `channelsV2QuotesPost()`
 
-```php
-channelsV2QuotesPost($quote_request): \Piksel\KigoPro\Model\QuoteResource
-```
+## channelsV2QuotesPost
+
+> \Piksel\KigoPro\Model\QuoteResource channelsV2QuotesPost($quote_request)
 
 Generate a quote given a desired QuoteContext
 
@@ -41,9 +40,11 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling QuoteApi->channelsV2QuotesPost: ', $e->getMessage(), PHP_EOL;
 }
+?>
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -59,18 +60,17 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
-- **Content-Type**: `application/json-patch+json`, `application/json`, `text/json`, `application/_*+json`
-- **Accept**: `text/plain`, `application/json`, `text/json`
+- **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+- **Accept**: text/plain, application/json, text/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
 [[Back to README]](../../README.md)
 
-## `channelsV2QuotesQuoteGuidBookPost()`
 
-```php
-channelsV2QuotesQuoteGuidBookPost($quote_guid, $post_booking_from_quote_request): \Piksel\KigoPro\Model\PostBookingResponse
-```
+## channelsV2QuotesQuoteGuidBookPost
+
+> \Piksel\KigoPro\Model\PostBookingResponse channelsV2QuotesQuoteGuidBookPost($quote_guid, $post_booking_from_quote_request)
 
 Convert a Quote into a Booking
 
@@ -100,9 +100,11 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling QuoteApi->channelsV2QuotesQuoteGuidBookPost: ', $e->getMessage(), PHP_EOL;
 }
+?>
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -119,9 +121,10 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
-- **Content-Type**: `application/json-patch+json`, `application/json`, `text/json`, `application/_*+json`
-- **Accept**: `text/plain`, `application/json`, `text/json`
+- **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+- **Accept**: text/plain, application/json, text/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
 [[Back to README]](../../README.md)
+

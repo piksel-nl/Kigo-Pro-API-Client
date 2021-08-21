@@ -1,18 +1,17 @@
 # Piksel\KigoPro\PropertyCheckInPolicyApi
 
-All URIs are relative to https://www.kigoapis.com.
+All URIs are relative to *https://www.kigoapis.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**proV1ContentPropertiesIdCheckinpolicyGet()**](PropertyCheckInPolicyApi.md#proV1ContentPropertiesIdCheckinpolicyGet) | **GET** /pro/v1/content/properties/{id}/checkinpolicy | 
-[**proV1ContentPropertiesIdCheckinpolicyPut()**](PropertyCheckInPolicyApi.md#proV1ContentPropertiesIdCheckinpolicyPut) | **PUT** /pro/v1/content/properties/{id}/checkinpolicy | 
+[**proV1ContentPropertiesIdCheckinpolicyGet**](PropertyCheckInPolicyApi.md#proV1ContentPropertiesIdCheckinpolicyGet) | **GET** /pro/v1/content/properties/{id}/checkinpolicy | 
+[**proV1ContentPropertiesIdCheckinpolicyPut**](PropertyCheckInPolicyApi.md#proV1ContentPropertiesIdCheckinpolicyPut) | **PUT** /pro/v1/content/properties/{id}/checkinpolicy | 
 
 
-## `proV1ContentPropertiesIdCheckinpolicyGet()`
 
-```php
-proV1ContentPropertiesIdCheckinpolicyGet($id): \Piksel\KigoPro\Model\GetCheckInPolicyVm
-```
+## proV1ContentPropertiesIdCheckinpolicyGet
+
+> \Piksel\KigoPro\Model\GetCheckInPolicyVm proV1ContentPropertiesIdCheckinpolicyGet($id)
 
 
 
@@ -33,7 +32,7 @@ $apiInstance = new Piksel\KigoPro\Api\PropertyCheckInPolicyApi(
     new GuzzleHttp\Client(),
     $config
 );
-$id = 56; // int
+$id = 56; // int | 
 
 try {
     $result = $apiInstance->proV1ContentPropertiesIdCheckinpolicyGet($id);
@@ -41,9 +40,11 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling PropertyCheckInPolicyApi->proV1ContentPropertiesIdCheckinpolicyGet: ', $e->getMessage(), PHP_EOL;
 }
+?>
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -60,17 +61,16 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `text/plain`, `application/json`, `text/json`
+- **Accept**: text/plain, application/json, text/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
 [[Back to README]](../../README.md)
 
-## `proV1ContentPropertiesIdCheckinpolicyPut()`
 
-```php
-proV1ContentPropertiesIdCheckinpolicyPut($id, $put_check_in_policy_command): \Piksel\KigoPro\Model\BooleanCommandOkEnvelope
-```
+## proV1ContentPropertiesIdCheckinpolicyPut
+
+> \Piksel\KigoPro\Model\BooleanCommandOkEnvelope proV1ContentPropertiesIdCheckinpolicyPut($id, $put_check_in_policy_command)
 
 
 
@@ -91,8 +91,8 @@ $apiInstance = new Piksel\KigoPro\Api\PropertyCheckInPolicyApi(
     new GuzzleHttp\Client(),
     $config
 );
-$id = 56; // int
-$put_check_in_policy_command = new \Piksel\KigoPro\Model\PutCheckInPolicyCommand(); // \Piksel\KigoPro\Model\PutCheckInPolicyCommand
+$id = 56; // int | 
+$put_check_in_policy_command = new \Piksel\KigoPro\Model\PutCheckInPolicyCommand(); // \Piksel\KigoPro\Model\PutCheckInPolicyCommand | 
 
 try {
     $result = $apiInstance->proV1ContentPropertiesIdCheckinpolicyPut($id, $put_check_in_policy_command);
@@ -100,9 +100,11 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling PropertyCheckInPolicyApi->proV1ContentPropertiesIdCheckinpolicyPut: ', $e->getMessage(), PHP_EOL;
 }
+?>
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -119,9 +121,10 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
-- **Content-Type**: `application/json-patch+json`, `application/json`, `text/json`, `application/_*+json`
-- **Accept**: `text/plain`, `application/json`, `text/json`
+- **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+- **Accept**: text/plain, application/json, text/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
 [[Back to README]](../../README.md)
+

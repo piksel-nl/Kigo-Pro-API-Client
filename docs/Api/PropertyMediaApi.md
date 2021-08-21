@@ -1,21 +1,20 @@
 # Piksel\KigoPro\PropertyMediaApi
 
-All URIs are relative to https://www.kigoapis.com.
+All URIs are relative to *https://www.kigoapis.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**proV1ContentPropertiesIdMediasGet()**](PropertyMediaApi.md#proV1ContentPropertiesIdMediasGet) | **GET** /pro/v1/content/properties/{id}/medias | 
-[**proV1ContentPropertiesIdMediasImagesPost()**](PropertyMediaApi.md#proV1ContentPropertiesIdMediasImagesPost) | **POST** /pro/v1/content/properties/{id}/medias/images | 
-[**proV1ContentPropertiesIdMediasMediaIdDelete()**](PropertyMediaApi.md#proV1ContentPropertiesIdMediasMediaIdDelete) | **DELETE** /pro/v1/content/properties/{id}/medias/{mediaId} | 
-[**proV1ContentPropertiesIdMediasMediaIdPut()**](PropertyMediaApi.md#proV1ContentPropertiesIdMediasMediaIdPut) | **PUT** /pro/v1/content/properties/{id}/medias/{mediaId} | 
-[**proV1ContentPropertiesMediatagsGet()**](PropertyMediaApi.md#proV1ContentPropertiesMediatagsGet) | **GET** /pro/v1/content/properties/mediatags | 
+[**proV1ContentPropertiesIdMediasGet**](PropertyMediaApi.md#proV1ContentPropertiesIdMediasGet) | **GET** /pro/v1/content/properties/{id}/medias | 
+[**proV1ContentPropertiesIdMediasImagesPost**](PropertyMediaApi.md#proV1ContentPropertiesIdMediasImagesPost) | **POST** /pro/v1/content/properties/{id}/medias/images | 
+[**proV1ContentPropertiesIdMediasMediaIdDelete**](PropertyMediaApi.md#proV1ContentPropertiesIdMediasMediaIdDelete) | **DELETE** /pro/v1/content/properties/{id}/medias/{mediaId} | 
+[**proV1ContentPropertiesIdMediasMediaIdPut**](PropertyMediaApi.md#proV1ContentPropertiesIdMediasMediaIdPut) | **PUT** /pro/v1/content/properties/{id}/medias/{mediaId} | 
+[**proV1ContentPropertiesMediatagsGet**](PropertyMediaApi.md#proV1ContentPropertiesMediatagsGet) | **GET** /pro/v1/content/properties/mediatags | 
 
 
-## `proV1ContentPropertiesIdMediasGet()`
 
-```php
-proV1ContentPropertiesIdMediasGet($id): \Piksel\KigoPro\Model\GetPropertyMediaVm
-```
+## proV1ContentPropertiesIdMediasGet
+
+> \Piksel\KigoPro\Model\GetPropertyMediaVm proV1ContentPropertiesIdMediasGet($id)
 
 
 
@@ -36,7 +35,7 @@ $apiInstance = new Piksel\KigoPro\Api\PropertyMediaApi(
     new GuzzleHttp\Client(),
     $config
 );
-$id = 56; // int
+$id = 56; // int | 
 
 try {
     $result = $apiInstance->proV1ContentPropertiesIdMediasGet($id);
@@ -44,9 +43,11 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling PropertyMediaApi->proV1ContentPropertiesIdMediasGet: ', $e->getMessage(), PHP_EOL;
 }
+?>
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -63,17 +64,16 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `text/plain`, `application/json`, `text/json`
+- **Accept**: text/plain, application/json, text/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
 [[Back to README]](../../README.md)
 
-## `proV1ContentPropertiesIdMediasImagesPost()`
 
-```php
-proV1ContentPropertiesIdMediasImagesPost($id, $post_property_media_command): \Piksel\KigoPro\Model\Int32CommandOkEnvelope
-```
+## proV1ContentPropertiesIdMediasImagesPost
+
+> \Piksel\KigoPro\Model\Int32CommandOkEnvelope proV1ContentPropertiesIdMediasImagesPost($id, $post_property_media_command)
 
 
 
@@ -94,8 +94,8 @@ $apiInstance = new Piksel\KigoPro\Api\PropertyMediaApi(
     new GuzzleHttp\Client(),
     $config
 );
-$id = 56; // int
-$post_property_media_command = new \Piksel\KigoPro\Model\PostPropertyMediaCommand(); // \Piksel\KigoPro\Model\PostPropertyMediaCommand
+$id = 56; // int | 
+$post_property_media_command = new \Piksel\KigoPro\Model\PostPropertyMediaCommand(); // \Piksel\KigoPro\Model\PostPropertyMediaCommand | 
 
 try {
     $result = $apiInstance->proV1ContentPropertiesIdMediasImagesPost($id, $post_property_media_command);
@@ -103,9 +103,11 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling PropertyMediaApi->proV1ContentPropertiesIdMediasImagesPost: ', $e->getMessage(), PHP_EOL;
 }
+?>
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -122,18 +124,17 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
-- **Content-Type**: `application/json-patch+json`, `application/json`, `text/json`, `application/_*+json`
-- **Accept**: `text/plain`, `application/json`, `text/json`
+- **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+- **Accept**: text/plain, application/json, text/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
 [[Back to README]](../../README.md)
 
-## `proV1ContentPropertiesIdMediasMediaIdDelete()`
 
-```php
-proV1ContentPropertiesIdMediasMediaIdDelete($id, $media_id): \Piksel\KigoPro\Model\BooleanCommandOkEnvelope
-```
+## proV1ContentPropertiesIdMediasMediaIdDelete
+
+> \Piksel\KigoPro\Model\BooleanCommandOkEnvelope proV1ContentPropertiesIdMediasMediaIdDelete($id, $media_id)
 
 
 
@@ -154,8 +155,8 @@ $apiInstance = new Piksel\KigoPro\Api\PropertyMediaApi(
     new GuzzleHttp\Client(),
     $config
 );
-$id = 56; // int
-$media_id = 56; // int
+$id = 56; // int | 
+$media_id = 56; // int | 
 
 try {
     $result = $apiInstance->proV1ContentPropertiesIdMediasMediaIdDelete($id, $media_id);
@@ -163,9 +164,11 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling PropertyMediaApi->proV1ContentPropertiesIdMediasMediaIdDelete: ', $e->getMessage(), PHP_EOL;
 }
+?>
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -183,17 +186,16 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `text/plain`, `application/json`, `text/json`
+- **Accept**: text/plain, application/json, text/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
 [[Back to README]](../../README.md)
 
-## `proV1ContentPropertiesIdMediasMediaIdPut()`
 
-```php
-proV1ContentPropertiesIdMediasMediaIdPut($id, $media_id, $put_property_media_tags_and_order_command): \Piksel\KigoPro\Model\BooleanCommandOkEnvelope
-```
+## proV1ContentPropertiesIdMediasMediaIdPut
+
+> \Piksel\KigoPro\Model\BooleanCommandOkEnvelope proV1ContentPropertiesIdMediasMediaIdPut($id, $media_id, $put_property_media_tags_and_order_command)
 
 
 
@@ -214,9 +216,9 @@ $apiInstance = new Piksel\KigoPro\Api\PropertyMediaApi(
     new GuzzleHttp\Client(),
     $config
 );
-$id = 56; // int
-$media_id = 56; // int
-$put_property_media_tags_and_order_command = new \Piksel\KigoPro\Model\PutPropertyMediaTagsAndOrderCommand(); // \Piksel\KigoPro\Model\PutPropertyMediaTagsAndOrderCommand
+$id = 56; // int | 
+$media_id = 56; // int | 
+$put_property_media_tags_and_order_command = new \Piksel\KigoPro\Model\PutPropertyMediaTagsAndOrderCommand(); // \Piksel\KigoPro\Model\PutPropertyMediaTagsAndOrderCommand | 
 
 try {
     $result = $apiInstance->proV1ContentPropertiesIdMediasMediaIdPut($id, $media_id, $put_property_media_tags_and_order_command);
@@ -224,9 +226,11 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling PropertyMediaApi->proV1ContentPropertiesIdMediasMediaIdPut: ', $e->getMessage(), PHP_EOL;
 }
+?>
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -244,18 +248,17 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
-- **Content-Type**: `application/json-patch+json`, `application/json`, `text/json`, `application/_*+json`
-- **Accept**: `text/plain`, `application/json`, `text/json`
+- **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+- **Accept**: text/plain, application/json, text/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
 [[Back to README]](../../README.md)
 
-## `proV1ContentPropertiesMediatagsGet()`
 
-```php
-proV1ContentPropertiesMediatagsGet(): \Piksel\KigoPro\Model\GetMediaTagsTagVm[]
-```
+## proV1ContentPropertiesMediatagsGet
+
+> \Piksel\KigoPro\Model\GetMediaTagsTagVm[] proV1ContentPropertiesMediatagsGet()
 
 
 
@@ -283,6 +286,7 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling PropertyMediaApi->proV1ContentPropertiesMediatagsGet: ', $e->getMessage(), PHP_EOL;
 }
+?>
 ```
 
 ### Parameters
@@ -300,8 +304,9 @@ This endpoint does not need any parameter.
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `text/plain`, `application/json`, `text/json`
+- **Accept**: text/plain, application/json, text/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
 [[Back to README]](../../README.md)
+

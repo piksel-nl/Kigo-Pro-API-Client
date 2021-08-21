@@ -1,23 +1,22 @@
 # Piksel\KigoPro\ListingApi
 
-All URIs are relative to https://www.kigoapis.com.
+All URIs are relative to *https://www.kigoapis.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**channelsV2ListingsDiffGet()**](ListingApi.md#channelsV2ListingsDiffGet) | **GET** /channels/v2/listings/diff | Get all the Listings where Price, Availability or Content has changed, after a given time
-[**channelsV2ListingsGet()**](ListingApi.md#channelsV2ListingsGet) | **GET** /channels/v2/listings | Get all listings associated to a requested channel
-[**channelsV2ListingsIdAvailabilityGet()**](ListingApi.md#channelsV2ListingsIdAvailabilityGet) | **GET** /channels/v2/listings/{id}/availability | Get Availability Feed
-[**channelsV2ListingsIdCheckavailabilityGet()**](ListingApi.md#channelsV2ListingsIdCheckavailabilityGet) | **GET** /channels/v2/listings/{id}/checkavailability | Check if a Listing is available
-[**channelsV2ListingsIdGet()**](ListingApi.md#channelsV2ListingsIdGet) | **GET** /channels/v2/listings/{id} | Get a listing
-[**channelsV2ListingsIdLospricingCsvGet()**](ListingApi.md#channelsV2ListingsIdLospricingCsvGet) | **GET** /channels/v2/listings/{id}/lospricing.csv | 
-[**channelsV2ListingsIdRatesGet()**](ListingApi.md#channelsV2ListingsIdRatesGet) | **GET** /channels/v2/listings/{id}/rates | Get contract-aware Rates Feed
+[**channelsV2ListingsDiffGet**](ListingApi.md#channelsV2ListingsDiffGet) | **GET** /channels/v2/listings/diff | Get all the Listings where Price, Availability or Content has changed, after a given time
+[**channelsV2ListingsGet**](ListingApi.md#channelsV2ListingsGet) | **GET** /channels/v2/listings | Get all listings associated to a requested channel
+[**channelsV2ListingsIdAvailabilityGet**](ListingApi.md#channelsV2ListingsIdAvailabilityGet) | **GET** /channels/v2/listings/{id}/availability | Get Availability Feed
+[**channelsV2ListingsIdCheckavailabilityGet**](ListingApi.md#channelsV2ListingsIdCheckavailabilityGet) | **GET** /channels/v2/listings/{id}/checkavailability | Check if a Listing is available
+[**channelsV2ListingsIdGet**](ListingApi.md#channelsV2ListingsIdGet) | **GET** /channels/v2/listings/{id} | Get a listing
+[**channelsV2ListingsIdLospricingCsvGet**](ListingApi.md#channelsV2ListingsIdLospricingCsvGet) | **GET** /channels/v2/listings/{id}/lospricing.csv | 
+[**channelsV2ListingsIdRatesGet**](ListingApi.md#channelsV2ListingsIdRatesGet) | **GET** /channels/v2/listings/{id}/rates | Get contract-aware Rates Feed
 
 
-## `channelsV2ListingsDiffGet()`
 
-```php
-channelsV2ListingsDiffGet($modified_after, $options): \Piksel\KigoPro\Model\GetDiffResult
-```
+## channelsV2ListingsDiffGet
+
+> \Piksel\KigoPro\Model\GetDiffResult channelsV2ListingsDiffGet($modified_after, $options)
 
 Get all the Listings where Price, Availability or Content has changed, after a given time
 
@@ -47,9 +46,11 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling ListingApi->channelsV2ListingsDiffGet: ', $e->getMessage(), PHP_EOL;
 }
+?>
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -67,17 +68,16 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `text/plain`, `application/json`, `text/json`
+- **Accept**: text/plain, application/json, text/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
 [[Back to README]](../../README.md)
 
-## `channelsV2ListingsGet()`
 
-```php
-channelsV2ListingsGet($cc_id): \Piksel\KigoPro\Model\GetListingsResultListResourceList
-```
+## channelsV2ListingsGet
+
+> \Piksel\KigoPro\Model\GetListingsResultListResourceList channelsV2ListingsGet($cc_id)
 
 Get all listings associated to a requested channel
 
@@ -106,9 +106,11 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling ListingApi->channelsV2ListingsGet: ', $e->getMessage(), PHP_EOL;
 }
+?>
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -125,17 +127,16 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `text/plain`, `application/json`, `text/json`
+- **Accept**: text/plain, application/json, text/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
 [[Back to README]](../../README.md)
 
-## `channelsV2ListingsIdAvailabilityGet()`
 
-```php
-channelsV2ListingsIdAvailabilityGet($id, $start_date, $end_date): \Piksel\KigoPro\Model\AvailabilityResource
-```
+## channelsV2ListingsIdAvailabilityGet
+
+> \Piksel\KigoPro\Model\AvailabilityResource channelsV2ListingsIdAvailabilityGet($id, $start_date, $end_date)
 
 Get Availability Feed
 
@@ -166,9 +167,11 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling ListingApi->channelsV2ListingsIdAvailabilityGet: ', $e->getMessage(), PHP_EOL;
 }
+?>
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -187,17 +190,16 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `text/plain`, `application/json`, `text/json`
+- **Accept**: text/plain, application/json, text/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
 [[Back to README]](../../README.md)
 
-## `channelsV2ListingsIdCheckavailabilityGet()`
 
-```php
-channelsV2ListingsIdCheckavailabilityGet($id, $check_in_date, $check_out_date, $num_adults, $num_children): \Piksel\KigoPro\Model\CheckAvailabilityOutputResource
-```
+## channelsV2ListingsIdCheckavailabilityGet
+
+> \Piksel\KigoPro\Model\CheckAvailabilityOutputResource channelsV2ListingsIdCheckavailabilityGet($id, $check_in_date, $check_out_date, $num_adults, $num_children)
 
 Check if a Listing is available
 
@@ -218,7 +220,7 @@ $apiInstance = new Piksel\KigoPro\Api\ListingApi(
     new GuzzleHttp\Client(),
     $config
 );
-$id = 56; // int
+$id = 56; // int | 
 $check_in_date = new \DateTime("2013-10-20T19:20:30+01:00"); // \DateTime | Check-In Date
 $check_out_date = new \DateTime("2013-10-20T19:20:30+01:00"); // \DateTime | Check-Out Date
 $num_adults = 56; // int | Number of Adults
@@ -230,9 +232,11 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling ListingApi->channelsV2ListingsIdCheckavailabilityGet: ', $e->getMessage(), PHP_EOL;
 }
+?>
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -253,17 +257,16 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `text/plain`, `application/json`, `text/json`
+- **Accept**: text/plain, application/json, text/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
 [[Back to README]](../../README.md)
 
-## `channelsV2ListingsIdGet()`
 
-```php
-channelsV2ListingsIdGet($id, $options): \Piksel\KigoPro\Model\ListingResource
-```
+## channelsV2ListingsIdGet
+
+> \Piksel\KigoPro\Model\ListingResource channelsV2ListingsIdGet($id, $options)
 
 Get a listing
 
@@ -293,9 +296,11 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling ListingApi->channelsV2ListingsIdGet: ', $e->getMessage(), PHP_EOL;
 }
+?>
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -313,17 +318,16 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `text/plain`, `application/json`, `text/json`
+- **Accept**: text/plain, application/json, text/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
 [[Back to README]](../../README.md)
 
-## `channelsV2ListingsIdLospricingCsvGet()`
 
-```php
-channelsV2ListingsIdLospricingCsvGet($id, $start_date, $end_date, $payment_plan_setting_id, $options)
-```
+## channelsV2ListingsIdLospricingCsvGet
+
+> channelsV2ListingsIdLospricingCsvGet($id, $start_date, $end_date, $payment_plan_setting_id, $options)
 
 
 
@@ -344,20 +348,22 @@ $apiInstance = new Piksel\KigoPro\Api\ListingApi(
     new GuzzleHttp\Client(),
     $config
 );
-$id = 56; // int
-$start_date = new \DateTime("2013-10-20T19:20:30+01:00"); // \DateTime
-$end_date = new \DateTime("2013-10-20T19:20:30+01:00"); // \DateTime
-$payment_plan_setting_id = 'payment_plan_setting_id_example'; // string
-$options = array('options_example'); // string[]
+$id = 56; // int | 
+$start_date = new \DateTime("2013-10-20T19:20:30+01:00"); // \DateTime | 
+$end_date = new \DateTime("2013-10-20T19:20:30+01:00"); // \DateTime | 
+$payment_plan_setting_id = 'payment_plan_setting_id_example'; // string | 
+$options = array('options_example'); // string[] | 
 
 try {
     $apiInstance->channelsV2ListingsIdLospricingCsvGet($id, $start_date, $end_date, $payment_plan_setting_id, $options);
 } catch (Exception $e) {
     echo 'Exception when calling ListingApi->channelsV2ListingsIdLospricingCsvGet: ', $e->getMessage(), PHP_EOL;
 }
+?>
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -378,17 +384,16 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `text/csv`
+- **Accept**: text/csv
 
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
 [[Back to README]](../../README.md)
 
-## `channelsV2ListingsIdRatesGet()`
 
-```php
-channelsV2ListingsIdRatesGet($id, $start_date, $end_date, $payment_plan_guid): \Piksel\KigoPro\Model\RateScheduleResource
-```
+## channelsV2ListingsIdRatesGet
+
+> \Piksel\KigoPro\Model\RateScheduleResource channelsV2ListingsIdRatesGet($id, $start_date, $end_date, $payment_plan_guid)
 
 Get contract-aware Rates Feed
 
@@ -420,9 +425,11 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling ListingApi->channelsV2ListingsIdRatesGet: ', $e->getMessage(), PHP_EOL;
 }
+?>
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -442,8 +449,9 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `text/plain`, `application/json`, `text/json`
+- **Accept**: text/plain, application/json, text/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
 [[Back to README]](../../README.md)
+

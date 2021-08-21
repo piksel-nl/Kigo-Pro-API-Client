@@ -1,17 +1,16 @@
-# OpenAPIClient-php
+# Kigo Pro API Client
 
 https://www.kigoapis.com/pro/v1/swagger/?urls.primaryName=Channel%20Manager%20API%20v2
 
+## Requirements
+
+PHP 5.5 and later
 
 ## Installation & Usage
 
-### Requirements
-
-PHP 7.2 and later.
-
 ### Composer
 
-To install the bindings via [Composer](https://getcomposer.org/), add the following to `composer.json`:
+To install the bindings via [Composer](http://getcomposer.org/), add the following to `composer.json`:
 
 ```json
 {
@@ -34,8 +33,16 @@ Then run `composer install`
 Download the files and include `autoload.php`:
 
 ```php
-<?php
-require_once('/path/to/vendor/autoload.php');
+    require_once('/path/to/vendor/autoload.php');
+```
+
+## Tests
+
+To run the unit tests:
+
+```bash
+composer install
+./vendor/bin/phpunit
 ```
 
 ## Getting Started
@@ -69,9 +76,10 @@ try {
     echo 'Exception when calling BookingApi->channelsV2BookingsDiffGet: ', $e->getMessage(), PHP_EOL;
 }
 
+?>
 ```
 
-## API Endpoints
+## Documentation for API Endpoints
 
 All URIs are relative to *https://www.kigoapis.com*
 
@@ -135,197 +143,188 @@ Class | Method | HTTP request | Description
 *ReferenceDataApi* | [**channelsV2CountriesGet**](docs/Api/ReferenceDataApi.md#channelsv2countriesget) | **GET** /channels/v2/countries | Get supported countries
 *ReferenceDataApi* | [**channelsV2MediatagsGet**](docs/Api/ReferenceDataApi.md#channelsv2mediatagsget) | **GET** /channels/v2/mediatags | Get supported tags
 
-## Models
 
-- [Account](docs/Model/Account.md)
-- [Address](docs/Model/Address.md)
-- [AggregatedChannelConnection](docs/Model/AggregatedChannelConnection.md)
-- [Amenity](docs/Model/Amenity.md)
-- [AmenityListResourceList](docs/Model/AmenityListResourceList.md)
-- [ApiError](docs/Model/ApiError.md)
-- [ApiErrorModel](docs/Model/ApiErrorModel.md)
-- [Availability](docs/Model/Availability.md)
-- [AvailabilityDay](docs/Model/AvailabilityDay.md)
-- [AvailabilityDayUnitCount](docs/Model/AvailabilityDayUnitCount.md)
-- [AvailabilityResource](docs/Model/AvailabilityResource.md)
-- [BlockedOutNightsSettings](docs/Model/BlockedOutNightsSettings.md)
-- [Booking](docs/Model/Booking.md)
-- [BookingDiffOutput](docs/Model/BookingDiffOutput.md)
-- [BookingDiffOutputListResourceList](docs/Model/BookingDiffOutputListResourceList.md)
-- [BookingEvent](docs/Model/BookingEvent.md)
-- [BookingResource](docs/Model/BookingResource.md)
-- [BooleanCommandOkEnvelope](docs/Model/BooleanCommandOkEnvelope.md)
-- [CancellationPolicy](docs/Model/CancellationPolicy.md)
-- [CancellationPolicyDto](docs/Model/CancellationPolicyDto.md)
-- [ChannelConnection](docs/Model/ChannelConnection.md)
-- [ChannelConnectionListing](docs/Model/ChannelConnectionListing.md)
-- [ChannelConnectionResource](docs/Model/ChannelConnectionResource.md)
-- [CheckAvailabilityOutput](docs/Model/CheckAvailabilityOutput.md)
-- [CheckAvailabilityOutputResource](docs/Model/CheckAvailabilityOutputResource.md)
-- [CheckInInstruction](docs/Model/CheckInInstruction.md)
-- [CheckInLocation](docs/Model/CheckInLocation.md)
-- [CheckInPolicy](docs/Model/CheckInPolicy.md)
-- [ContractSettings](docs/Model/ContractSettings.md)
-- [ContractVersion](docs/Model/ContractVersion.md)
-- [ContractualTerms](docs/Model/ContractualTerms.md)
-- [Country](docs/Model/Country.md)
-- [CountryListResourceList](docs/Model/CountryListResourceList.md)
-- [CreatePropertyCommand](docs/Model/CreatePropertyCommand.md)
-- [CreatePropertyResponseVm](docs/Model/CreatePropertyResponseVm.md)
-- [CreatePropertyResponseVmCommandOkEnvelope](docs/Model/CreatePropertyResponseVmCommandOkEnvelope.md)
-- [CreditCard](docs/Model/CreditCard.md)
-- [CreditCardAuthorizationError](docs/Model/CreditCardAuthorizationError.md)
-- [CreditCardAuthorizationResponse](docs/Model/CreditCardAuthorizationResponse.md)
-- [CreditCardResponse](docs/Model/CreditCardResponse.md)
-- [DepositStatement](docs/Model/DepositStatement.md)
-- [FeeSettings](docs/Model/FeeSettings.md)
-- [GetAmenitiesMainAmenityVm](docs/Model/GetAmenitiesMainAmenityVm.md)
-- [GetAmenitiesMainAmenityVmListResourceList](docs/Model/GetAmenitiesMainAmenityVmListResourceList.md)
-- [GetBookingVm](docs/Model/GetBookingVm.md)
-- [GetCheckInPolicyInstructions](docs/Model/GetCheckInPolicyInstructions.md)
-- [GetCheckInPolicyLocationDto](docs/Model/GetCheckInPolicyLocationDto.md)
-- [GetCheckInPolicyVm](docs/Model/GetCheckInPolicyVm.md)
-- [GetDiffResult](docs/Model/GetDiffResult.md)
-- [GetHouseRulesVm](docs/Model/GetHouseRulesVm.md)
-- [GetLegalInfoVm](docs/Model/GetLegalInfoVm.md)
-- [GetListingsResult](docs/Model/GetListingsResult.md)
-- [GetListingsResultListResourceList](docs/Model/GetListingsResultListResourceList.md)
-- [GetMediaTagsTagVm](docs/Model/GetMediaTagsTagVm.md)
-- [GetPropertyAddressVm](docs/Model/GetPropertyAddressVm.md)
-- [GetPropertyAmentiesVm](docs/Model/GetPropertyAmentiesVm.md)
-- [GetPropertyDescriptionsDescriptionVm](docs/Model/GetPropertyDescriptionsDescriptionVm.md)
-- [GetPropertyDescriptionsVm](docs/Model/GetPropertyDescriptionsVm.md)
-- [GetPropertyDetailsPublicNameDto](docs/Model/GetPropertyDetailsPublicNameDto.md)
-- [GetPropertyDetailsVm](docs/Model/GetPropertyDetailsVm.md)
-- [GetPropertyMediaVm](docs/Model/GetPropertyMediaVm.md)
-- [GetPropertyMediasMediaDto](docs/Model/GetPropertyMediasMediaDto.md)
-- [GetPropertyRateVm](docs/Model/GetPropertyRateVm.md)
-- [GetPropertyRoomsBedDto](docs/Model/GetPropertyRoomsBedDto.md)
-- [GetPropertyRoomsRoomDto](docs/Model/GetPropertyRoomsRoomDto.md)
-- [GetPropertyRoomsVm](docs/Model/GetPropertyRoomsVm.md)
-- [GetPropertySummaryAddressDto](docs/Model/GetPropertySummaryAddressDto.md)
-- [GetPropertySummaryVm](docs/Model/GetPropertySummaryVm.md)
-- [GetUserMessageResponse](docs/Model/GetUserMessageResponse.md)
-- [GetUserMessageResponseResource](docs/Model/GetUserMessageResponseResource.md)
-- [GuestStatement](docs/Model/GuestStatement.md)
-- [GuestStatementDetail](docs/Model/GuestStatementDetail.md)
-- [Int32CommandOkEnvelope](docs/Model/Int32CommandOkEnvelope.md)
-- [Listing](docs/Model/Listing.md)
-- [ListingBlockedOutNightRule](docs/Model/ListingBlockedOutNightRule.md)
-- [ListingBookingWindowRule](docs/Model/ListingBookingWindowRule.md)
-- [ListingDiffImpact](docs/Model/ListingDiffImpact.md)
-- [ListingFeeRule](docs/Model/ListingFeeRule.md)
-- [ListingImpact](docs/Model/ListingImpact.md)
-- [ListingMaxStayRule](docs/Model/ListingMaxStayRule.md)
-- [ListingRateAdjustment](docs/Model/ListingRateAdjustment.md)
-- [ListingResource](docs/Model/ListingResource.md)
-- [Location](docs/Model/Location.md)
-- [Media](docs/Model/Media.md)
-- [OptionalFee](docs/Model/OptionalFee.md)
-- [PackedStatement](docs/Model/PackedStatement.md)
-- [PaymentGateway](docs/Model/PaymentGateway.md)
-- [PaymentPlanSetting](docs/Model/PaymentPlanSetting.md)
-- [PaymentResponse](docs/Model/PaymentResponse.md)
-- [PaymentSchedule](docs/Model/PaymentSchedule.md)
-- [PaymentScheduleRequest](docs/Model/PaymentScheduleRequest.md)
-- [Person](docs/Model/Person.md)
-- [PostBookingCreditCardResponse](docs/Model/PostBookingCreditCardResponse.md)
-- [PostBookingFromQuoteRequest](docs/Model/PostBookingFromQuoteRequest.md)
-- [PostBookingRequest](docs/Model/PostBookingRequest.md)
-- [PostBookingResponse](docs/Model/PostBookingResponse.md)
-- [PostPersonRequest](docs/Model/PostPersonRequest.md)
-- [PostPropertyMediaCommand](docs/Model/PostPropertyMediaCommand.md)
-- [PostThreadRequest](docs/Model/PostThreadRequest.md)
-- [PostThreadResponse](docs/Model/PostThreadResponse.md)
-- [PostThreadResponseResource](docs/Model/PostThreadResponseResource.md)
-- [PostUserMessageRequest](docs/Model/PostUserMessageRequest.md)
-- [PostUserMessageResponse](docs/Model/PostUserMessageResponse.md)
-- [PostUserMessageResponseResource](docs/Model/PostUserMessageResponseResource.md)
-- [PromotionCoupon](docs/Model/PromotionCoupon.md)
-- [PromotionSetting](docs/Model/PromotionSetting.md)
-- [PromotionSettingWithAssociatedListings](docs/Model/PromotionSettingWithAssociatedListings.md)
-- [PromotionSettingWithAssociatedListingsListResourceList](docs/Model/PromotionSettingWithAssociatedListingsListResourceList.md)
-- [PropertyAddress](docs/Model/PropertyAddress.md)
-- [PropertyDescription](docs/Model/PropertyDescription.md)
-- [PutBookingRequest](docs/Model/PutBookingRequest.md)
-- [PutBookingResponse](docs/Model/PutBookingResponse.md)
-- [PutCheckInPolicyCheckInInstructionsDto](docs/Model/PutCheckInPolicyCheckInInstructionsDto.md)
-- [PutCheckInPolicyCommand](docs/Model/PutCheckInPolicyCommand.md)
-- [PutCheckInPolicyLocationDto](docs/Model/PutCheckInPolicyLocationDto.md)
-- [PutHouseRulesCommand](docs/Model/PutHouseRulesCommand.md)
-- [PutLegalInfoCommand](docs/Model/PutLegalInfoCommand.md)
-- [PutPropertyAddressCommand](docs/Model/PutPropertyAddressCommand.md)
-- [PutPropertyAmenitiesCommand](docs/Model/PutPropertyAmenitiesCommand.md)
-- [PutPropertyDescriptionsCommand](docs/Model/PutPropertyDescriptionsCommand.md)
-- [PutPropertyDescriptionsDescriptionDto](docs/Model/PutPropertyDescriptionsDescriptionDto.md)
-- [PutPropertyDetailsCommand](docs/Model/PutPropertyDetailsCommand.md)
-- [PutPropertyDetailsPublicNameDto](docs/Model/PutPropertyDetailsPublicNameDto.md)
-- [PutPropertyMediaTagsAndOrderCommand](docs/Model/PutPropertyMediaTagsAndOrderCommand.md)
-- [PutPropertyRoomsBedDto](docs/Model/PutPropertyRoomsBedDto.md)
-- [PutPropertyRoomsCommand](docs/Model/PutPropertyRoomsCommand.md)
-- [PutPropertyRoomsRoomDto](docs/Model/PutPropertyRoomsRoomDto.md)
-- [PutUserMessageRequest](docs/Model/PutUserMessageRequest.md)
-- [PutUserMessageResponse](docs/Model/PutUserMessageResponse.md)
-- [PutUserMessageResponseResource](docs/Model/PutUserMessageResponseResource.md)
-- [Quote](docs/Model/Quote.md)
-- [QuotePlan](docs/Model/QuotePlan.md)
-- [QuoteRequest](docs/Model/QuoteRequest.md)
-- [QuoteResource](docs/Model/QuoteResource.md)
-- [Rate](docs/Model/Rate.md)
-- [RateAdjustmentRule](docs/Model/RateAdjustmentRule.md)
-- [RateAdjustmentRuleOverride](docs/Model/RateAdjustmentRuleOverride.md)
-- [RateSchedule](docs/Model/RateSchedule.md)
-- [RateScheduleNight](docs/Model/RateScheduleNight.md)
-- [RateScheduleResource](docs/Model/RateScheduleResource.md)
-- [Review](docs/Model/Review.md)
-- [Room](docs/Model/Room.md)
-- [RoomAmenity](docs/Model/RoomAmenity.md)
-- [RoomList](docs/Model/RoomList.md)
-- [ScheduledTransaction](docs/Model/ScheduledTransaction.md)
-- [ScheduledTransactionRequest](docs/Model/ScheduledTransactionRequest.md)
-- [SetPropertyRateDto](docs/Model/SetPropertyRateDto.md)
-- [StatementDetail](docs/Model/StatementDetail.md)
-- [StaySettings](docs/Model/StaySettings.md)
-- [Tag](docs/Model/Tag.md)
-- [TagListResourceList](docs/Model/TagListResourceList.md)
-- [ThreadModelResponse](docs/Model/ThreadModelResponse.md)
-- [TimeBetweenReservationsRule](docs/Model/TimeBetweenReservationsRule.md)
-- [Transaction](docs/Model/Transaction.md)
-- [UserMessage](docs/Model/UserMessage.md)
-- [UserMessageAttachment](docs/Model/UserMessageAttachment.md)
-- [UserMessageDetail](docs/Model/UserMessageDetail.md)
-- [ValidationErrorException](docs/Model/ValidationErrorException.md)
-- [ValidationErrorItem](docs/Model/ValidationErrorItem.md)
+## Documentation For Models
 
-## Authorization
+ - [Account](docs/Model/Account.md)
+ - [Address](docs/Model/Address.md)
+ - [AggregatedChannelConnection](docs/Model/AggregatedChannelConnection.md)
+ - [Amenity](docs/Model/Amenity.md)
+ - [AmenityListResourceList](docs/Model/AmenityListResourceList.md)
+ - [ApiError](docs/Model/ApiError.md)
+ - [ApiErrorModel](docs/Model/ApiErrorModel.md)
+ - [Availability](docs/Model/Availability.md)
+ - [AvailabilityDay](docs/Model/AvailabilityDay.md)
+ - [AvailabilityDayUnitCount](docs/Model/AvailabilityDayUnitCount.md)
+ - [AvailabilityResource](docs/Model/AvailabilityResource.md)
+ - [BlockedOutNightsSettings](docs/Model/BlockedOutNightsSettings.md)
+ - [Booking](docs/Model/Booking.md)
+ - [BookingDiffOutput](docs/Model/BookingDiffOutput.md)
+ - [BookingDiffOutputListResourceList](docs/Model/BookingDiffOutputListResourceList.md)
+ - [BookingEvent](docs/Model/BookingEvent.md)
+ - [BookingResource](docs/Model/BookingResource.md)
+ - [BooleanCommandOkEnvelope](docs/Model/BooleanCommandOkEnvelope.md)
+ - [CancellationPolicy](docs/Model/CancellationPolicy.md)
+ - [CancellationPolicyDto](docs/Model/CancellationPolicyDto.md)
+ - [ChannelConnection](docs/Model/ChannelConnection.md)
+ - [ChannelConnectionListing](docs/Model/ChannelConnectionListing.md)
+ - [ChannelConnectionResource](docs/Model/ChannelConnectionResource.md)
+ - [CheckAvailabilityOutput](docs/Model/CheckAvailabilityOutput.md)
+ - [CheckAvailabilityOutputResource](docs/Model/CheckAvailabilityOutputResource.md)
+ - [CheckInInstruction](docs/Model/CheckInInstruction.md)
+ - [CheckInLocation](docs/Model/CheckInLocation.md)
+ - [CheckInPolicy](docs/Model/CheckInPolicy.md)
+ - [ContractSettings](docs/Model/ContractSettings.md)
+ - [ContractVersion](docs/Model/ContractVersion.md)
+ - [ContractualTerms](docs/Model/ContractualTerms.md)
+ - [Country](docs/Model/Country.md)
+ - [CountryListResourceList](docs/Model/CountryListResourceList.md)
+ - [CreatePropertyCommand](docs/Model/CreatePropertyCommand.md)
+ - [CreatePropertyResponseVm](docs/Model/CreatePropertyResponseVm.md)
+ - [CreatePropertyResponseVmCommandOkEnvelope](docs/Model/CreatePropertyResponseVmCommandOkEnvelope.md)
+ - [CreditCard](docs/Model/CreditCard.md)
+ - [CreditCardAuthorizationError](docs/Model/CreditCardAuthorizationError.md)
+ - [CreditCardAuthorizationResponse](docs/Model/CreditCardAuthorizationResponse.md)
+ - [CreditCardResponse](docs/Model/CreditCardResponse.md)
+ - [DepositStatement](docs/Model/DepositStatement.md)
+ - [FeeSettings](docs/Model/FeeSettings.md)
+ - [GetAmenitiesMainAmenityVm](docs/Model/GetAmenitiesMainAmenityVm.md)
+ - [GetAmenitiesMainAmenityVmListResourceList](docs/Model/GetAmenitiesMainAmenityVmListResourceList.md)
+ - [GetBookingVm](docs/Model/GetBookingVm.md)
+ - [GetCheckInPolicyInstructions](docs/Model/GetCheckInPolicyInstructions.md)
+ - [GetCheckInPolicyLocationDto](docs/Model/GetCheckInPolicyLocationDto.md)
+ - [GetCheckInPolicyVm](docs/Model/GetCheckInPolicyVm.md)
+ - [GetDiffResult](docs/Model/GetDiffResult.md)
+ - [GetHouseRulesVm](docs/Model/GetHouseRulesVm.md)
+ - [GetLegalInfoVm](docs/Model/GetLegalInfoVm.md)
+ - [GetListingsResult](docs/Model/GetListingsResult.md)
+ - [GetListingsResultListResourceList](docs/Model/GetListingsResultListResourceList.md)
+ - [GetMediaTagsTagVm](docs/Model/GetMediaTagsTagVm.md)
+ - [GetPropertyAddressVm](docs/Model/GetPropertyAddressVm.md)
+ - [GetPropertyAmentiesVm](docs/Model/GetPropertyAmentiesVm.md)
+ - [GetPropertyDescriptionsDescriptionVm](docs/Model/GetPropertyDescriptionsDescriptionVm.md)
+ - [GetPropertyDescriptionsVm](docs/Model/GetPropertyDescriptionsVm.md)
+ - [GetPropertyDetailsPublicNameDto](docs/Model/GetPropertyDetailsPublicNameDto.md)
+ - [GetPropertyDetailsVm](docs/Model/GetPropertyDetailsVm.md)
+ - [GetPropertyMediaVm](docs/Model/GetPropertyMediaVm.md)
+ - [GetPropertyMediasMediaDto](docs/Model/GetPropertyMediasMediaDto.md)
+ - [GetPropertyRateVm](docs/Model/GetPropertyRateVm.md)
+ - [GetPropertyRoomsBedDto](docs/Model/GetPropertyRoomsBedDto.md)
+ - [GetPropertyRoomsRoomDto](docs/Model/GetPropertyRoomsRoomDto.md)
+ - [GetPropertyRoomsVm](docs/Model/GetPropertyRoomsVm.md)
+ - [GetPropertySummaryAddressDto](docs/Model/GetPropertySummaryAddressDto.md)
+ - [GetPropertySummaryVm](docs/Model/GetPropertySummaryVm.md)
+ - [GetUserMessageResponse](docs/Model/GetUserMessageResponse.md)
+ - [GetUserMessageResponseResource](docs/Model/GetUserMessageResponseResource.md)
+ - [GuestStatement](docs/Model/GuestStatement.md)
+ - [GuestStatementDetail](docs/Model/GuestStatementDetail.md)
+ - [Int32CommandOkEnvelope](docs/Model/Int32CommandOkEnvelope.md)
+ - [Listing](docs/Model/Listing.md)
+ - [ListingBlockedOutNightRule](docs/Model/ListingBlockedOutNightRule.md)
+ - [ListingBookingWindowRule](docs/Model/ListingBookingWindowRule.md)
+ - [ListingDiffImpact](docs/Model/ListingDiffImpact.md)
+ - [ListingFeeRule](docs/Model/ListingFeeRule.md)
+ - [ListingImpact](docs/Model/ListingImpact.md)
+ - [ListingMaxStayRule](docs/Model/ListingMaxStayRule.md)
+ - [ListingRateAdjustment](docs/Model/ListingRateAdjustment.md)
+ - [ListingResource](docs/Model/ListingResource.md)
+ - [Location](docs/Model/Location.md)
+ - [Media](docs/Model/Media.md)
+ - [OptionalFee](docs/Model/OptionalFee.md)
+ - [PackedStatement](docs/Model/PackedStatement.md)
+ - [PaymentGateway](docs/Model/PaymentGateway.md)
+ - [PaymentPlanSetting](docs/Model/PaymentPlanSetting.md)
+ - [PaymentResponse](docs/Model/PaymentResponse.md)
+ - [PaymentSchedule](docs/Model/PaymentSchedule.md)
+ - [PaymentScheduleRequest](docs/Model/PaymentScheduleRequest.md)
+ - [Person](docs/Model/Person.md)
+ - [PostBookingCreditCardResponse](docs/Model/PostBookingCreditCardResponse.md)
+ - [PostBookingFromQuoteRequest](docs/Model/PostBookingFromQuoteRequest.md)
+ - [PostBookingRequest](docs/Model/PostBookingRequest.md)
+ - [PostBookingResponse](docs/Model/PostBookingResponse.md)
+ - [PostPersonRequest](docs/Model/PostPersonRequest.md)
+ - [PostPropertyMediaCommand](docs/Model/PostPropertyMediaCommand.md)
+ - [PostThreadRequest](docs/Model/PostThreadRequest.md)
+ - [PostThreadResponse](docs/Model/PostThreadResponse.md)
+ - [PostThreadResponseResource](docs/Model/PostThreadResponseResource.md)
+ - [PostUserMessageRequest](docs/Model/PostUserMessageRequest.md)
+ - [PostUserMessageResponse](docs/Model/PostUserMessageResponse.md)
+ - [PostUserMessageResponseResource](docs/Model/PostUserMessageResponseResource.md)
+ - [PromotionCoupon](docs/Model/PromotionCoupon.md)
+ - [PromotionSetting](docs/Model/PromotionSetting.md)
+ - [PromotionSettingWithAssociatedListings](docs/Model/PromotionSettingWithAssociatedListings.md)
+ - [PromotionSettingWithAssociatedListingsListResourceList](docs/Model/PromotionSettingWithAssociatedListingsListResourceList.md)
+ - [PropertyAddress](docs/Model/PropertyAddress.md)
+ - [PropertyDescription](docs/Model/PropertyDescription.md)
+ - [PutBookingRequest](docs/Model/PutBookingRequest.md)
+ - [PutBookingResponse](docs/Model/PutBookingResponse.md)
+ - [PutCheckInPolicyCheckInInstructionsDto](docs/Model/PutCheckInPolicyCheckInInstructionsDto.md)
+ - [PutCheckInPolicyCommand](docs/Model/PutCheckInPolicyCommand.md)
+ - [PutCheckInPolicyLocationDto](docs/Model/PutCheckInPolicyLocationDto.md)
+ - [PutHouseRulesCommand](docs/Model/PutHouseRulesCommand.md)
+ - [PutLegalInfoCommand](docs/Model/PutLegalInfoCommand.md)
+ - [PutPropertyAddressCommand](docs/Model/PutPropertyAddressCommand.md)
+ - [PutPropertyAmenitiesCommand](docs/Model/PutPropertyAmenitiesCommand.md)
+ - [PutPropertyDescriptionsCommand](docs/Model/PutPropertyDescriptionsCommand.md)
+ - [PutPropertyDescriptionsDescriptionDto](docs/Model/PutPropertyDescriptionsDescriptionDto.md)
+ - [PutPropertyDetailsCommand](docs/Model/PutPropertyDetailsCommand.md)
+ - [PutPropertyDetailsPublicNameDto](docs/Model/PutPropertyDetailsPublicNameDto.md)
+ - [PutPropertyMediaTagsAndOrderCommand](docs/Model/PutPropertyMediaTagsAndOrderCommand.md)
+ - [PutPropertyRoomsBedDto](docs/Model/PutPropertyRoomsBedDto.md)
+ - [PutPropertyRoomsCommand](docs/Model/PutPropertyRoomsCommand.md)
+ - [PutPropertyRoomsRoomDto](docs/Model/PutPropertyRoomsRoomDto.md)
+ - [PutUserMessageRequest](docs/Model/PutUserMessageRequest.md)
+ - [PutUserMessageResponse](docs/Model/PutUserMessageResponse.md)
+ - [PutUserMessageResponseResource](docs/Model/PutUserMessageResponseResource.md)
+ - [Quote](docs/Model/Quote.md)
+ - [QuotePlan](docs/Model/QuotePlan.md)
+ - [QuoteRequest](docs/Model/QuoteRequest.md)
+ - [QuoteResource](docs/Model/QuoteResource.md)
+ - [Rate](docs/Model/Rate.md)
+ - [RateAdjustmentRule](docs/Model/RateAdjustmentRule.md)
+ - [RateAdjustmentRuleOverride](docs/Model/RateAdjustmentRuleOverride.md)
+ - [RateSchedule](docs/Model/RateSchedule.md)
+ - [RateScheduleNight](docs/Model/RateScheduleNight.md)
+ - [RateScheduleResource](docs/Model/RateScheduleResource.md)
+ - [Review](docs/Model/Review.md)
+ - [Room](docs/Model/Room.md)
+ - [RoomAmenity](docs/Model/RoomAmenity.md)
+ - [RoomList](docs/Model/RoomList.md)
+ - [ScheduledTransaction](docs/Model/ScheduledTransaction.md)
+ - [ScheduledTransactionRequest](docs/Model/ScheduledTransactionRequest.md)
+ - [SetPropertyRateDto](docs/Model/SetPropertyRateDto.md)
+ - [StatementDetail](docs/Model/StatementDetail.md)
+ - [StaySettings](docs/Model/StaySettings.md)
+ - [Tag](docs/Model/Tag.md)
+ - [TagListResourceList](docs/Model/TagListResourceList.md)
+ - [ThreadModelResponse](docs/Model/ThreadModelResponse.md)
+ - [TimeBetweenReservationsRule](docs/Model/TimeBetweenReservationsRule.md)
+ - [Transaction](docs/Model/Transaction.md)
+ - [UserMessage](docs/Model/UserMessage.md)
+ - [UserMessageAttachment](docs/Model/UserMessageAttachment.md)
+ - [UserMessageDetail](docs/Model/UserMessageDetail.md)
+ - [ValidationErrorException](docs/Model/ValidationErrorException.md)
+ - [ValidationErrorItem](docs/Model/ValidationErrorItem.md)
 
-### oauth2
 
-- **Type**: `OAuth`
-- **Flow**: `application`
-- **Authorization URL**: `https://auth.kigo.net/connect/authorize`
+## Documentation For Authorization
+
+
+
+## oauth2
+
+
+- **Type**: OAuth
+- **Flow**: application
+- **Authorization URL**: https://auth.kigo.net/connect/authorize
 - **Scopes**: 
-    - **cm.api**: Kigo Pro - Channel Manager API Access
-    - **automation.api**: Kigo Pro - Automation API Access
-    - **developer.api**: Kigo Pro - Developer API Access
-    - **pro.api**: (deprecated) Kigo Pro API Access
+- **cm.api**: Kigo Pro - Channel Manager API Access
+- **automation.api**: Kigo Pro - Automation API Access
+- **developer.api**: Kigo Pro - Developer API Access
+- **pro.api**: (deprecated) Kigo Pro API Access
 
-## Tests
-
-To run the tests, use:
-
-```bash
-composer install
-vendor/bin/phpunit
-```
 
 ## Author
 
 
 
-## About this package
-
-This PHP package is automatically generated by the [OpenAPI Generator](https://openapi-generator.tech) project:
-
-- API version: `channels-v2`
-- Build package: `org.openapitools.codegen.languages.PhpClientCodegen`

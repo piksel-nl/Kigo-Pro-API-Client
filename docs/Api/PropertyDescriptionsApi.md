@@ -1,18 +1,17 @@
 # Piksel\KigoPro\PropertyDescriptionsApi
 
-All URIs are relative to https://www.kigoapis.com.
+All URIs are relative to *https://www.kigoapis.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**proV1ContentPropertiesIdDescriptionsGet()**](PropertyDescriptionsApi.md#proV1ContentPropertiesIdDescriptionsGet) | **GET** /pro/v1/content/properties/{id}/descriptions | 
-[**proV1ContentPropertiesIdDescriptionsPut()**](PropertyDescriptionsApi.md#proV1ContentPropertiesIdDescriptionsPut) | **PUT** /pro/v1/content/properties/{id}/descriptions | 
+[**proV1ContentPropertiesIdDescriptionsGet**](PropertyDescriptionsApi.md#proV1ContentPropertiesIdDescriptionsGet) | **GET** /pro/v1/content/properties/{id}/descriptions | 
+[**proV1ContentPropertiesIdDescriptionsPut**](PropertyDescriptionsApi.md#proV1ContentPropertiesIdDescriptionsPut) | **PUT** /pro/v1/content/properties/{id}/descriptions | 
 
 
-## `proV1ContentPropertiesIdDescriptionsGet()`
 
-```php
-proV1ContentPropertiesIdDescriptionsGet($id): \Piksel\KigoPro\Model\GetPropertyDescriptionsVm
-```
+## proV1ContentPropertiesIdDescriptionsGet
+
+> \Piksel\KigoPro\Model\GetPropertyDescriptionsVm proV1ContentPropertiesIdDescriptionsGet($id)
 
 
 
@@ -33,7 +32,7 @@ $apiInstance = new Piksel\KigoPro\Api\PropertyDescriptionsApi(
     new GuzzleHttp\Client(),
     $config
 );
-$id = 56; // int
+$id = 56; // int | 
 
 try {
     $result = $apiInstance->proV1ContentPropertiesIdDescriptionsGet($id);
@@ -41,9 +40,11 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling PropertyDescriptionsApi->proV1ContentPropertiesIdDescriptionsGet: ', $e->getMessage(), PHP_EOL;
 }
+?>
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -60,17 +61,16 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `text/plain`, `application/json`, `text/json`
+- **Accept**: text/plain, application/json, text/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
 [[Back to README]](../../README.md)
 
-## `proV1ContentPropertiesIdDescriptionsPut()`
 
-```php
-proV1ContentPropertiesIdDescriptionsPut($id, $put_property_descriptions_command): \Piksel\KigoPro\Model\BooleanCommandOkEnvelope
-```
+## proV1ContentPropertiesIdDescriptionsPut
+
+> \Piksel\KigoPro\Model\BooleanCommandOkEnvelope proV1ContentPropertiesIdDescriptionsPut($id, $put_property_descriptions_command)
 
 
 
@@ -91,8 +91,8 @@ $apiInstance = new Piksel\KigoPro\Api\PropertyDescriptionsApi(
     new GuzzleHttp\Client(),
     $config
 );
-$id = 56; // int
-$put_property_descriptions_command = new \Piksel\KigoPro\Model\PutPropertyDescriptionsCommand(); // \Piksel\KigoPro\Model\PutPropertyDescriptionsCommand
+$id = 56; // int | 
+$put_property_descriptions_command = new \Piksel\KigoPro\Model\PutPropertyDescriptionsCommand(); // \Piksel\KigoPro\Model\PutPropertyDescriptionsCommand | 
 
 try {
     $result = $apiInstance->proV1ContentPropertiesIdDescriptionsPut($id, $put_property_descriptions_command);
@@ -100,9 +100,11 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling PropertyDescriptionsApi->proV1ContentPropertiesIdDescriptionsPut: ', $e->getMessage(), PHP_EOL;
 }
+?>
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -119,9 +121,10 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
-- **Content-Type**: `application/json-patch+json`, `application/json`, `text/json`, `application/_*+json`
-- **Accept**: `text/plain`, `application/json`, `text/json`
+- **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+- **Accept**: text/plain, application/json, text/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
 [[Back to README]](../../README.md)
+

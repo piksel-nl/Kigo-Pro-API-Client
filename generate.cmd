@@ -1,1 +1,1 @@
-docker run --rm -v %cd%:/local openapitools/openapi-generator-cli generate -i /local/openapi.json -g php -o /local/out/php --additional-properties=invokerPackage=Piksel\KigoPro
+docker run --rm -v %cd%:/local openapitools/openapi-generator-cli:v4.1.3 generate -i /local/openapi.json -g php -o /local/out/php --additional-properties=invokerPackage=Piksel\KigoPro

@@ -1,18 +1,17 @@
 # Piksel\KigoPro\PropertyHouseRulesApi
 
-All URIs are relative to https://www.kigoapis.com.
+All URIs are relative to *https://www.kigoapis.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**proV1ContentPropertiesIdHouserulesGet()**](PropertyHouseRulesApi.md#proV1ContentPropertiesIdHouserulesGet) | **GET** /pro/v1/content/properties/{id}/houserules | 
-[**proV1ContentPropertiesIdHouserulesPut()**](PropertyHouseRulesApi.md#proV1ContentPropertiesIdHouserulesPut) | **PUT** /pro/v1/content/properties/{id}/houserules | 
+[**proV1ContentPropertiesIdHouserulesGet**](PropertyHouseRulesApi.md#proV1ContentPropertiesIdHouserulesGet) | **GET** /pro/v1/content/properties/{id}/houserules | 
+[**proV1ContentPropertiesIdHouserulesPut**](PropertyHouseRulesApi.md#proV1ContentPropertiesIdHouserulesPut) | **PUT** /pro/v1/content/properties/{id}/houserules | 
 
 
-## `proV1ContentPropertiesIdHouserulesGet()`
 
-```php
-proV1ContentPropertiesIdHouserulesGet($id): \Piksel\KigoPro\Model\GetHouseRulesVm
-```
+## proV1ContentPropertiesIdHouserulesGet
+
+> \Piksel\KigoPro\Model\GetHouseRulesVm proV1ContentPropertiesIdHouserulesGet($id)
 
 
 
@@ -33,7 +32,7 @@ $apiInstance = new Piksel\KigoPro\Api\PropertyHouseRulesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$id = 56; // int
+$id = 56; // int | 
 
 try {
     $result = $apiInstance->proV1ContentPropertiesIdHouserulesGet($id);
@@ -41,9 +40,11 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling PropertyHouseRulesApi->proV1ContentPropertiesIdHouserulesGet: ', $e->getMessage(), PHP_EOL;
 }
+?>
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -60,17 +61,16 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `text/plain`, `application/json`, `text/json`
+- **Accept**: text/plain, application/json, text/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
 [[Back to README]](../../README.md)
 
-## `proV1ContentPropertiesIdHouserulesPut()`
 
-```php
-proV1ContentPropertiesIdHouserulesPut($id, $put_house_rules_command): \Piksel\KigoPro\Model\BooleanCommandOkEnvelope
-```
+## proV1ContentPropertiesIdHouserulesPut
+
+> \Piksel\KigoPro\Model\BooleanCommandOkEnvelope proV1ContentPropertiesIdHouserulesPut($id, $put_house_rules_command)
 
 
 
@@ -91,8 +91,8 @@ $apiInstance = new Piksel\KigoPro\Api\PropertyHouseRulesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$id = 56; // int
-$put_house_rules_command = new \Piksel\KigoPro\Model\PutHouseRulesCommand(); // \Piksel\KigoPro\Model\PutHouseRulesCommand
+$id = 56; // int | 
+$put_house_rules_command = new \Piksel\KigoPro\Model\PutHouseRulesCommand(); // \Piksel\KigoPro\Model\PutHouseRulesCommand | 
 
 try {
     $result = $apiInstance->proV1ContentPropertiesIdHouserulesPut($id, $put_house_rules_command);
@@ -100,9 +100,11 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling PropertyHouseRulesApi->proV1ContentPropertiesIdHouserulesPut: ', $e->getMessage(), PHP_EOL;
 }
+?>
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -119,9 +121,10 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
-- **Content-Type**: `application/json-patch+json`, `application/json`, `text/json`, `application/_*+json`
-- **Accept**: `text/plain`, `application/json`, `text/json`
+- **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+- **Accept**: text/plain, application/json, text/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
 [[Back to README]](../../README.md)
+

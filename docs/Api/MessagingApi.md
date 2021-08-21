@@ -1,21 +1,20 @@
 # Piksel\KigoPro\MessagingApi
 
-All URIs are relative to https://www.kigoapis.com.
+All URIs are relative to *https://www.kigoapis.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**channelsV2MessagingMessagesGet()**](MessagingApi.md#channelsV2MessagingMessagesGet) | **GET** /channels/v2/messaging/messages | Get Messages
-[**channelsV2MessagingThreadsPost()**](MessagingApi.md#channelsV2MessagingThreadsPost) | **POST** /channels/v2/messaging/threads | Create a new Thread
-[**channelsV2MessagingThreadsTidMessagesIdPut()**](MessagingApi.md#channelsV2MessagingThreadsTidMessagesIdPut) | **PUT** /channels/v2/messaging/threads/{tid}/messages/{id} | Update a Message
-[**channelsV2MessagingThreadsTidMessagesPost()**](MessagingApi.md#channelsV2MessagingThreadsTidMessagesPost) | **POST** /channels/v2/messaging/threads/{tid}/messages | Create a new Message
-[**channelsV2MessagingThreadsTidPut()**](MessagingApi.md#channelsV2MessagingThreadsTidPut) | **PUT** /channels/v2/messaging/threads/{tid} | Update a Thread
+[**channelsV2MessagingMessagesGet**](MessagingApi.md#channelsV2MessagingMessagesGet) | **GET** /channels/v2/messaging/messages | Get Messages
+[**channelsV2MessagingThreadsPost**](MessagingApi.md#channelsV2MessagingThreadsPost) | **POST** /channels/v2/messaging/threads | Create a new Thread
+[**channelsV2MessagingThreadsTidMessagesIdPut**](MessagingApi.md#channelsV2MessagingThreadsTidMessagesIdPut) | **PUT** /channels/v2/messaging/threads/{tid}/messages/{id} | Update a Message
+[**channelsV2MessagingThreadsTidMessagesPost**](MessagingApi.md#channelsV2MessagingThreadsTidMessagesPost) | **POST** /channels/v2/messaging/threads/{tid}/messages | Create a new Message
+[**channelsV2MessagingThreadsTidPut**](MessagingApi.md#channelsV2MessagingThreadsTidPut) | **PUT** /channels/v2/messaging/threads/{tid} | Update a Thread
 
 
-## `channelsV2MessagingMessagesGet()`
 
-```php
-channelsV2MessagingMessagesGet(): \Piksel\KigoPro\Model\GetUserMessageResponseResource
-```
+## channelsV2MessagingMessagesGet
+
+> \Piksel\KigoPro\Model\GetUserMessageResponseResource channelsV2MessagingMessagesGet()
 
 Get Messages
 
@@ -43,6 +42,7 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling MessagingApi->channelsV2MessagingMessagesGet: ', $e->getMessage(), PHP_EOL;
 }
+?>
 ```
 
 ### Parameters
@@ -60,17 +60,16 @@ This endpoint does not need any parameter.
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `text/plain`, `application/json`, `text/json`
+- **Accept**: text/plain, application/json, text/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
 [[Back to README]](../../README.md)
 
-## `channelsV2MessagingThreadsPost()`
 
-```php
-channelsV2MessagingThreadsPost($post_thread_request): \Piksel\KigoPro\Model\PostThreadResponseResource
-```
+## channelsV2MessagingThreadsPost
+
+> \Piksel\KigoPro\Model\PostThreadResponseResource channelsV2MessagingThreadsPost($post_thread_request)
 
 Create a new Thread
 
@@ -99,9 +98,11 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling MessagingApi->channelsV2MessagingThreadsPost: ', $e->getMessage(), PHP_EOL;
 }
+?>
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -117,18 +118,17 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
-- **Content-Type**: `application/json-patch+json`, `application/json`, `text/json`, `application/_*+json`
-- **Accept**: `text/plain`, `application/json`, `text/json`
+- **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+- **Accept**: text/plain, application/json, text/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
 [[Back to README]](../../README.md)
 
-## `channelsV2MessagingThreadsTidMessagesIdPut()`
 
-```php
-channelsV2MessagingThreadsTidMessagesIdPut($tid, $id, $put_user_message_request): \Piksel\KigoPro\Model\PutUserMessageResponseResource
-```
+## channelsV2MessagingThreadsTidMessagesIdPut
+
+> \Piksel\KigoPro\Model\PutUserMessageResponseResource channelsV2MessagingThreadsTidMessagesIdPut($tid, $id, $put_user_message_request)
 
 Update a Message
 
@@ -159,9 +159,11 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling MessagingApi->channelsV2MessagingThreadsTidMessagesIdPut: ', $e->getMessage(), PHP_EOL;
 }
+?>
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -179,18 +181,17 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
-- **Content-Type**: `application/json-patch+json`, `application/json`, `text/json`, `application/_*+json`
-- **Accept**: `text/plain`, `application/json`, `text/json`
+- **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+- **Accept**: text/plain, application/json, text/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
 [[Back to README]](../../README.md)
 
-## `channelsV2MessagingThreadsTidMessagesPost()`
 
-```php
-channelsV2MessagingThreadsTidMessagesPost($tid, $post_user_message_request): \Piksel\KigoPro\Model\PostUserMessageResponseResource
-```
+## channelsV2MessagingThreadsTidMessagesPost
+
+> \Piksel\KigoPro\Model\PostUserMessageResponseResource channelsV2MessagingThreadsTidMessagesPost($tid, $post_user_message_request)
 
 Create a new Message
 
@@ -220,9 +221,11 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling MessagingApi->channelsV2MessagingThreadsTidMessagesPost: ', $e->getMessage(), PHP_EOL;
 }
+?>
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -239,18 +242,17 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
-- **Content-Type**: `application/json-patch+json`, `application/json`, `text/json`, `application/_*+json`
-- **Accept**: `text/plain`, `application/json`, `text/json`
+- **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+- **Accept**: text/plain, application/json, text/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
 [[Back to README]](../../README.md)
 
-## `channelsV2MessagingThreadsTidPut()`
 
-```php
-channelsV2MessagingThreadsTidPut($tid, $post_thread_request): \Piksel\KigoPro\Model\PostThreadResponseResource
-```
+## channelsV2MessagingThreadsTidPut
+
+> \Piksel\KigoPro\Model\PostThreadResponseResource channelsV2MessagingThreadsTidPut($tid, $post_thread_request)
 
 Update a Thread
 
@@ -280,9 +282,11 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling MessagingApi->channelsV2MessagingThreadsTidPut: ', $e->getMessage(), PHP_EOL;
 }
+?>
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -299,9 +303,10 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
-- **Content-Type**: `application/json-patch+json`, `application/json`, `text/json`, `application/_*+json`
-- **Accept**: `text/plain`, `application/json`, `text/json`
+- **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+- **Accept**: text/plain, application/json, text/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
 [[Back to README]](../../README.md)
+

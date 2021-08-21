@@ -1,17 +1,16 @@
 # Piksel\KigoPro\ChannelConnectionApi
 
-All URIs are relative to https://www.kigoapis.com.
+All URIs are relative to *https://www.kigoapis.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**channelsV2ConnectionsGet()**](ChannelConnectionApi.md#channelsV2ConnectionsGet) | **GET** /channels/v2/connections | Get Channel Connection
+[**channelsV2ConnectionsGet**](ChannelConnectionApi.md#channelsV2ConnectionsGet) | **GET** /channels/v2/connections | Get Channel Connection
 
 
-## `channelsV2ConnectionsGet()`
 
-```php
-channelsV2ConnectionsGet($options): \Piksel\KigoPro\Model\ChannelConnectionResource
-```
+## channelsV2ConnectionsGet
+
+> \Piksel\KigoPro\Model\ChannelConnectionResource channelsV2ConnectionsGet($options)
 
 Get Channel Connection
 
@@ -32,7 +31,7 @@ $apiInstance = new Piksel\KigoPro\Api\ChannelConnectionApi(
     new GuzzleHttp\Client(),
     $config
 );
-$options = array('options_example'); // string[]
+$options = array('options_example'); // string[] | 
 
 try {
     $result = $apiInstance->channelsV2ConnectionsGet($options);
@@ -40,9 +39,11 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling ChannelConnectionApi->channelsV2ConnectionsGet: ', $e->getMessage(), PHP_EOL;
 }
+?>
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -59,8 +60,9 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `text/plain`, `application/json`, `text/json`
+- **Accept**: text/plain, application/json, text/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
 [[Back to README]](../../README.md)
+

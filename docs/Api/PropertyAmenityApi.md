@@ -1,19 +1,18 @@
 # Piksel\KigoPro\PropertyAmenityApi
 
-All URIs are relative to https://www.kigoapis.com.
+All URIs are relative to *https://www.kigoapis.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**proV1ContentPropertiesAmenitiesGet()**](PropertyAmenityApi.md#proV1ContentPropertiesAmenitiesGet) | **GET** /pro/v1/content/properties/amenities | 
-[**proV1ContentPropertiesIdAmenitiesGet()**](PropertyAmenityApi.md#proV1ContentPropertiesIdAmenitiesGet) | **GET** /pro/v1/content/properties/{id}/amenities | 
-[**proV1ContentPropertiesIdAmenitiesPut()**](PropertyAmenityApi.md#proV1ContentPropertiesIdAmenitiesPut) | **PUT** /pro/v1/content/properties/{id}/amenities | 
+[**proV1ContentPropertiesAmenitiesGet**](PropertyAmenityApi.md#proV1ContentPropertiesAmenitiesGet) | **GET** /pro/v1/content/properties/amenities | 
+[**proV1ContentPropertiesIdAmenitiesGet**](PropertyAmenityApi.md#proV1ContentPropertiesIdAmenitiesGet) | **GET** /pro/v1/content/properties/{id}/amenities | 
+[**proV1ContentPropertiesIdAmenitiesPut**](PropertyAmenityApi.md#proV1ContentPropertiesIdAmenitiesPut) | **PUT** /pro/v1/content/properties/{id}/amenities | 
 
 
-## `proV1ContentPropertiesAmenitiesGet()`
 
-```php
-proV1ContentPropertiesAmenitiesGet(): \Piksel\KigoPro\Model\GetAmenitiesMainAmenityVmListResourceList
-```
+## proV1ContentPropertiesAmenitiesGet
+
+> \Piksel\KigoPro\Model\GetAmenitiesMainAmenityVmListResourceList proV1ContentPropertiesAmenitiesGet()
 
 
 
@@ -41,6 +40,7 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling PropertyAmenityApi->proV1ContentPropertiesAmenitiesGet: ', $e->getMessage(), PHP_EOL;
 }
+?>
 ```
 
 ### Parameters
@@ -58,17 +58,16 @@ This endpoint does not need any parameter.
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `text/plain`, `application/json`, `text/json`
+- **Accept**: text/plain, application/json, text/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
 [[Back to README]](../../README.md)
 
-## `proV1ContentPropertiesIdAmenitiesGet()`
 
-```php
-proV1ContentPropertiesIdAmenitiesGet($id): \Piksel\KigoPro\Model\GetPropertyAmentiesVm
-```
+## proV1ContentPropertiesIdAmenitiesGet
+
+> \Piksel\KigoPro\Model\GetPropertyAmentiesVm proV1ContentPropertiesIdAmenitiesGet($id)
 
 
 
@@ -89,7 +88,7 @@ $apiInstance = new Piksel\KigoPro\Api\PropertyAmenityApi(
     new GuzzleHttp\Client(),
     $config
 );
-$id = 56; // int
+$id = 56; // int | 
 
 try {
     $result = $apiInstance->proV1ContentPropertiesIdAmenitiesGet($id);
@@ -97,9 +96,11 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling PropertyAmenityApi->proV1ContentPropertiesIdAmenitiesGet: ', $e->getMessage(), PHP_EOL;
 }
+?>
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -116,17 +117,16 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `text/plain`, `application/json`, `text/json`
+- **Accept**: text/plain, application/json, text/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
 [[Back to README]](../../README.md)
 
-## `proV1ContentPropertiesIdAmenitiesPut()`
 
-```php
-proV1ContentPropertiesIdAmenitiesPut($id, $put_property_amenities_command): \Piksel\KigoPro\Model\BooleanCommandOkEnvelope
-```
+## proV1ContentPropertiesIdAmenitiesPut
+
+> \Piksel\KigoPro\Model\BooleanCommandOkEnvelope proV1ContentPropertiesIdAmenitiesPut($id, $put_property_amenities_command)
 
 
 
@@ -147,8 +147,8 @@ $apiInstance = new Piksel\KigoPro\Api\PropertyAmenityApi(
     new GuzzleHttp\Client(),
     $config
 );
-$id = 56; // int
-$put_property_amenities_command = new \Piksel\KigoPro\Model\PutPropertyAmenitiesCommand(); // \Piksel\KigoPro\Model\PutPropertyAmenitiesCommand
+$id = 56; // int | 
+$put_property_amenities_command = new \Piksel\KigoPro\Model\PutPropertyAmenitiesCommand(); // \Piksel\KigoPro\Model\PutPropertyAmenitiesCommand | 
 
 try {
     $result = $apiInstance->proV1ContentPropertiesIdAmenitiesPut($id, $put_property_amenities_command);
@@ -156,9 +156,11 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling PropertyAmenityApi->proV1ContentPropertiesIdAmenitiesPut: ', $e->getMessage(), PHP_EOL;
 }
+?>
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -175,9 +177,10 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
-- **Content-Type**: `application/json-patch+json`, `application/json`, `text/json`, `application/_*+json`
-- **Accept**: `text/plain`, `application/json`, `text/json`
+- **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+- **Accept**: text/plain, application/json, text/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
 [[Back to README]](../../README.md)
+

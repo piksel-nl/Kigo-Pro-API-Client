@@ -1,17 +1,16 @@
 # Piksel\KigoPro\PromotionApi
 
-All URIs are relative to https://www.kigoapis.com.
+All URIs are relative to *https://www.kigoapis.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**channelsV2PromotionsAssignmentGet()**](PromotionApi.md#channelsV2PromotionsAssignmentGet) | **GET** /channels/v2/promotions/assignment | Get Promotions with assigned listing ids for active and shared listings on a given channel.
+[**channelsV2PromotionsAssignmentGet**](PromotionApi.md#channelsV2PromotionsAssignmentGet) | **GET** /channels/v2/promotions/assignment | Get Promotions with assigned listing ids for active and shared listings on a given channel.
 
 
-## `channelsV2PromotionsAssignmentGet()`
 
-```php
-channelsV2PromotionsAssignmentGet($cc_id): \Piksel\KigoPro\Model\PromotionSettingWithAssociatedListingsListResourceList
-```
+## channelsV2PromotionsAssignmentGet
+
+> \Piksel\KigoPro\Model\PromotionSettingWithAssociatedListingsListResourceList channelsV2PromotionsAssignmentGet($cc_id)
 
 Get Promotions with assigned listing ids for active and shared listings on a given channel.
 
@@ -32,7 +31,7 @@ $apiInstance = new Piksel\KigoPro\Api\PromotionApi(
     new GuzzleHttp\Client(),
     $config
 );
-$cc_id = 56; // int
+$cc_id = 56; // int | 
 
 try {
     $result = $apiInstance->channelsV2PromotionsAssignmentGet($cc_id);
@@ -40,9 +39,11 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling PromotionApi->channelsV2PromotionsAssignmentGet: ', $e->getMessage(), PHP_EOL;
 }
+?>
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -59,8 +60,9 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `text/plain`, `application/json`, `text/json`
+- **Accept**: text/plain, application/json, text/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
 [[Back to README]](../../README.md)
+

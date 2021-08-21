@@ -1,18 +1,17 @@
 # Piksel\KigoPro\RateApi
 
-All URIs are relative to https://www.kigoapis.com.
+All URIs are relative to *https://www.kigoapis.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**proV1PropertiesIdRatesGet()**](RateApi.md#proV1PropertiesIdRatesGet) | **GET** /pro/v1/properties/{id}/rates | 
-[**proV1PropertiesIdRatesPost()**](RateApi.md#proV1PropertiesIdRatesPost) | **POST** /pro/v1/properties/{id}/rates | 
+[**proV1PropertiesIdRatesGet**](RateApi.md#proV1PropertiesIdRatesGet) | **GET** /pro/v1/properties/{id}/rates | 
+[**proV1PropertiesIdRatesPost**](RateApi.md#proV1PropertiesIdRatesPost) | **POST** /pro/v1/properties/{id}/rates | 
 
 
-## `proV1PropertiesIdRatesGet()`
 
-```php
-proV1PropertiesIdRatesGet($id, $start_date, $end_date): \Piksel\KigoPro\Model\GetPropertyRateVm[]
-```
+## proV1PropertiesIdRatesGet
+
+> \Piksel\KigoPro\Model\GetPropertyRateVm[] proV1PropertiesIdRatesGet($id, $start_date, $end_date)
 
 
 
@@ -33,9 +32,9 @@ $apiInstance = new Piksel\KigoPro\Api\RateApi(
     new GuzzleHttp\Client(),
     $config
 );
-$id = 56; // int
-$start_date = new \DateTime("2013-10-20T19:20:30+01:00"); // \DateTime
-$end_date = new \DateTime("2013-10-20T19:20:30+01:00"); // \DateTime
+$id = 56; // int | 
+$start_date = new \DateTime("2013-10-20T19:20:30+01:00"); // \DateTime | 
+$end_date = new \DateTime("2013-10-20T19:20:30+01:00"); // \DateTime | 
 
 try {
     $result = $apiInstance->proV1PropertiesIdRatesGet($id, $start_date, $end_date);
@@ -43,9 +42,11 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling RateApi->proV1PropertiesIdRatesGet: ', $e->getMessage(), PHP_EOL;
 }
+?>
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -64,17 +65,16 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `text/plain`, `application/json`, `text/json`
+- **Accept**: text/plain, application/json, text/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
 [[Back to README]](../../README.md)
 
-## `proV1PropertiesIdRatesPost()`
 
-```php
-proV1PropertiesIdRatesPost($id, $set_property_rate_dto): \Piksel\KigoPro\Model\BooleanCommandOkEnvelope
-```
+## proV1PropertiesIdRatesPost
+
+> \Piksel\KigoPro\Model\BooleanCommandOkEnvelope proV1PropertiesIdRatesPost($id, $set_property_rate_dto)
 
 
 
@@ -95,8 +95,8 @@ $apiInstance = new Piksel\KigoPro\Api\RateApi(
     new GuzzleHttp\Client(),
     $config
 );
-$id = 56; // int
-$set_property_rate_dto = array(new \Piksel\KigoPro\Model\SetPropertyRateDto()); // \Piksel\KigoPro\Model\SetPropertyRateDto[]
+$id = 56; // int | 
+$set_property_rate_dto = array(new \Piksel\KigoPro\Model\SetPropertyRateDto()); // \Piksel\KigoPro\Model\SetPropertyRateDto[] | 
 
 try {
     $result = $apiInstance->proV1PropertiesIdRatesPost($id, $set_property_rate_dto);
@@ -104,9 +104,11 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling RateApi->proV1PropertiesIdRatesPost: ', $e->getMessage(), PHP_EOL;
 }
+?>
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -123,9 +125,10 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
-- **Content-Type**: `application/json-patch+json`, `application/json`, `text/json`, `application/_*+json`
-- **Accept**: `text/plain`, `application/json`, `text/json`
+- **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+- **Accept**: text/plain, application/json, text/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
 [[Back to README]](../../README.md)
+

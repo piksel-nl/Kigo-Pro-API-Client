@@ -1,18 +1,17 @@
 # Piksel\KigoPro\PropertyLegalInfoApi
 
-All URIs are relative to https://www.kigoapis.com.
+All URIs are relative to *https://www.kigoapis.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**proV1ContentPropertiesIdLegalinfoGet()**](PropertyLegalInfoApi.md#proV1ContentPropertiesIdLegalinfoGet) | **GET** /pro/v1/content/properties/{id}/legalinfo | 
-[**proV1ContentPropertiesIdLegalinfoPut()**](PropertyLegalInfoApi.md#proV1ContentPropertiesIdLegalinfoPut) | **PUT** /pro/v1/content/properties/{id}/legalinfo | 
+[**proV1ContentPropertiesIdLegalinfoGet**](PropertyLegalInfoApi.md#proV1ContentPropertiesIdLegalinfoGet) | **GET** /pro/v1/content/properties/{id}/legalinfo | 
+[**proV1ContentPropertiesIdLegalinfoPut**](PropertyLegalInfoApi.md#proV1ContentPropertiesIdLegalinfoPut) | **PUT** /pro/v1/content/properties/{id}/legalinfo | 
 
 
-## `proV1ContentPropertiesIdLegalinfoGet()`
 
-```php
-proV1ContentPropertiesIdLegalinfoGet($id): \Piksel\KigoPro\Model\GetLegalInfoVm
-```
+## proV1ContentPropertiesIdLegalinfoGet
+
+> \Piksel\KigoPro\Model\GetLegalInfoVm proV1ContentPropertiesIdLegalinfoGet($id)
 
 
 
@@ -33,7 +32,7 @@ $apiInstance = new Piksel\KigoPro\Api\PropertyLegalInfoApi(
     new GuzzleHttp\Client(),
     $config
 );
-$id = 56; // int
+$id = 56; // int | 
 
 try {
     $result = $apiInstance->proV1ContentPropertiesIdLegalinfoGet($id);
@@ -41,9 +40,11 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling PropertyLegalInfoApi->proV1ContentPropertiesIdLegalinfoGet: ', $e->getMessage(), PHP_EOL;
 }
+?>
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -60,17 +61,16 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `text/plain`, `application/json`, `text/json`
+- **Accept**: text/plain, application/json, text/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
 [[Back to README]](../../README.md)
 
-## `proV1ContentPropertiesIdLegalinfoPut()`
 
-```php
-proV1ContentPropertiesIdLegalinfoPut($id, $put_legal_info_command): \Piksel\KigoPro\Model\BooleanCommandOkEnvelope
-```
+## proV1ContentPropertiesIdLegalinfoPut
+
+> \Piksel\KigoPro\Model\BooleanCommandOkEnvelope proV1ContentPropertiesIdLegalinfoPut($id, $put_legal_info_command)
 
 
 
@@ -91,8 +91,8 @@ $apiInstance = new Piksel\KigoPro\Api\PropertyLegalInfoApi(
     new GuzzleHttp\Client(),
     $config
 );
-$id = 56; // int
-$put_legal_info_command = new \Piksel\KigoPro\Model\PutLegalInfoCommand(); // \Piksel\KigoPro\Model\PutLegalInfoCommand
+$id = 56; // int | 
+$put_legal_info_command = new \Piksel\KigoPro\Model\PutLegalInfoCommand(); // \Piksel\KigoPro\Model\PutLegalInfoCommand | 
 
 try {
     $result = $apiInstance->proV1ContentPropertiesIdLegalinfoPut($id, $put_legal_info_command);
@@ -100,9 +100,11 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling PropertyLegalInfoApi->proV1ContentPropertiesIdLegalinfoPut: ', $e->getMessage(), PHP_EOL;
 }
+?>
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -119,9 +121,10 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
-- **Content-Type**: `application/json-patch+json`, `application/json`, `text/json`, `application/_*+json`
-- **Accept**: `text/plain`, `application/json`, `text/json`
+- **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+- **Accept**: text/plain, application/json, text/json
 
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../../README.md#documentation-for-models)
 [[Back to README]](../../README.md)
+
